@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InformationRoutingComponent } from './components/information-routing/information-routing.component';
+import { TourismServiceRoutingComponent } from './components/tourism-service-routing/tourism-service-routing.component';
 
 
 const routes: Routes = [
   {
     path : "",
-    component : InformationRoutingComponent,
-    children :[]
+    component : TourismServiceRoutingComponent,
+    children : []
   }
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class InformationRoutingModule { }
+export class TourismServiceRoutingModule { }

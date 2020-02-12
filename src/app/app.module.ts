@@ -19,8 +19,16 @@ const routes : Routes = [
       {
         path : "information",
         loadChildren : "./information/information.module#InformationModule"
+      },
+      {
+        path : "tourism-service",
+        loadChildren : "./tourism-service/tourism-service.module#TourismServiceModule"
       }
     ]
+  },
+  {
+    path : "**",
+    redirectTo : "/"
   }
 ]
 @NgModule({
