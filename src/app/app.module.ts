@@ -24,6 +24,10 @@ const routes : Routes = [
       {
         path : "tourism-service",
         loadChildren : "./tourism-service/tourism-service.module#TourismServiceModule"
+      },
+      {
+        path : "site-information",
+        loadChildren : "./site-information/site-information.module#SiteInformationModule"
       }
     ]
   },
