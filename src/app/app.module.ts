@@ -15,6 +15,10 @@ const routes : Routes = [
       {
         path : "medical-service",
         loadChildren : "./medical-service/medical-service.module#MedicalServiceModule"
+      },
+      {
+        path : "information",
+        loadChildren : "./information/information.module#InformationModule"
       }
     ]
   }
