@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material.module';
 import { SharedModule } from './shared/shared.module';
+import { HeaderFooterModule } from './header-footer/header-footer.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    SharedModule
-  ],
-  exports : [
-    MaterialModule,
-    SharedModule
+    HeaderFooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

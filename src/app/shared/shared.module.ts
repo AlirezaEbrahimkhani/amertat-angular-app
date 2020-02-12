@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormlyModule} from '@ngx-formly/core';
 import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
+import { HeaderFooterModule } from '../header-footer/header-footer.module';
 
 
 
@@ -13,12 +14,14 @@ import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
     CommonModule,
     FormlyBootstrapModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot()
+    FormlyModule.forRoot(),
+    HeaderFooterModule
   ],
   exports : [
     CommonModule,
     FormlyBootstrapModule,
     ReactiveFormsModule,
+    HeaderFooterModule
   ]
 })
 export class SharedModule { }
