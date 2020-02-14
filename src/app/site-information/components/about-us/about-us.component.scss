@@ -34,3 +34,25 @@
         padding: 0px 50px;
       }
 }
+
+.who-we-are {
+
+    .who-title{
+        text-align: center;
+        font-size: 35px;
+        font-family: sans-serif;
+        margin-top: 25px;
+    }
+
+    .who-text {
+        font-size: 20px;
+        font-family: sans-serif;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        padding: 5px 10px;
+        box-shadow: 0px 7px 10px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+}
