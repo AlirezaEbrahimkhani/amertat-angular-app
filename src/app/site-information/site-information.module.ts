@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { SiteInformationRoutingModule } from './site-information-routing.routes';
 import { SiteInformationRouringComponent } from './components/site-information-rouring/site-information-rouring.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { MaterialModule } from '../shared/material.module';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { MaterialModule } from '../shared/material.module';
   imports: [
     CommonModule,
     SiteInformationRoutingModule,
-    MaterialModule
+    SharedModule
   ]
 })
 export class SiteInformationModule { }

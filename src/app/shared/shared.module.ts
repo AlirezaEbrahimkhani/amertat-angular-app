@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
-import {FormlyModule} from '@ngx-formly/core';
 import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
-import { HeaderFooterModule } from '../header-footer/header-footer.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MaterialModule } from './material.module';
 
 
 
@@ -11,17 +10,16 @@ import { HeaderFooterModule } from '../header-footer/header-footer.module';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
     FormlyBootstrapModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
-    HeaderFooterModule
+    MDBBootstrapModule.forRoot(),
+    MaterialModule
   ],
   exports : [
-    CommonModule,
     FormlyBootstrapModule,
     ReactiveFormsModule,
-    HeaderFooterModule
+    MDBBootstrapModule,
+    MaterialModule
   ]
 })
 export class SharedModule { }
