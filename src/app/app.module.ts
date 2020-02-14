@@ -47,7 +47,6 @@ const routes : Routes = [
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
-    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
