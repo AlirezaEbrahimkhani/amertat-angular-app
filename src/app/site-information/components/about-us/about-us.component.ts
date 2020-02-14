@@ -11,7 +11,20 @@ export class AboutUsComponent implements OnInit {
     "Accomodation",
     "Medical Appointments",
     "Transportation",
+    "Guide and Translation",
+    "Accomodation",
+    "Medical Appointments",
+    "Transportation",
     "Guide and Translation"
+  ]
+
+  Lables : string[] = [
+    "First Name",
+    "Last Name",
+    "Phone Number",
+    "Your Email",
+    "Your Message",
+    "Description"
   ]
 
   constructor() { }
