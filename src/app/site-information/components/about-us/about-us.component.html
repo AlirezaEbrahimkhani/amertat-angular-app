@@ -23,4 +23,26 @@
             clinics, and top surgeons. All AriaMedTour medical treatments’ costs are 40 to 200 percent cheaper than 
             those in other countries.</p>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="header">Our services</p>
+                <div class="services">
+                    <mat-accordion>
+                        <mat-expansion-panel *ngFor="let service of Services">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{ service }}
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in</p>
+                        </mat-expansion-panel>
+                      </mat-accordion>
+                </div>
+            </div>
+            <div class="col">
+                <p class="header">Contact Us</p>
+            </div>
+        </div>
+    </div>
 </div>

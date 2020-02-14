@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
+  Services : string[] = [
+    "Accomodation",
+    "Medical Appointments",
+    "Transportation",
+    "Guide and Translation"
+  ]
+
   constructor() { }
 
   ngOnInit() {
