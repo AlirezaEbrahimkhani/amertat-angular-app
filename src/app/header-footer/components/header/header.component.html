@@ -1,1 +1,36 @@
-<p>header works!</p>
+<div id="header">
+  <div class="row">
+    <div id="header-title">
+      <div class="font-size-1 text-center">Amertat Medical Tourism</div>
+    </div>
+    <div id="header-btn-group">
+      <button
+        mat-raised-button
+        class="header-btn font-size-2"
+        id="header-btn-1"
+        (click)="openModal('contact')"
+        #contact
+      >
+        Contact Us
+      </button>
+      <button
+        mat-raised-button
+        class="header-btn font-size-2"
+        id="header-btn-2"
+        (click)="openModal('start')"
+        #start
+      >
+        Get Started
+      </button>
+      <button
+        mat-raised-button
+        class="header-btn font-size-2"
+        id="header-btn-3"
+        (click)="openModal('qoute')"
+        #qoute
+      >
+        Get Free Qoute
+      </button>
+    </div>
+  </div>
+</div>
