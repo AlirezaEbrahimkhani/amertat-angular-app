@@ -5,13 +5,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatButtonModule } from '@angular/material';
+import { HeaderDialogComponent } from './components/header/header-dialog/header-dialog.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent, 
     FooterComponent, 
-    NavbarComponent
+    NavbarComponent, HeaderDialogComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +22,9 @@ import { MatButtonModule } from '@angular/material';
     HeaderComponent, 
     FooterComponent, 
     NavbarComponent
+  ],
+  entryComponents : [
+    HeaderDialogComponent,
   ]
 })
 export class HeaderFooterModule { }
