@@ -1,1 +1,82 @@
-<p>footer works!</p>
+<footer class="page-footer font-small unique-color-dark">
+    <div style="background-color: #6351ce;">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="margin-lr text-center text-md-left mt-5">
+      <div class="row mt-3">
+        <div class="center col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Amertat Medical Tourism</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p class="web-info">all rights reserved 2019 Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet.</p>
+  
+        </div>
+
+        <div class="center col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">PROCEDURES</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p *ngFor="let procedure of procedures">
+            <a href="#!">{{ procedure }}</a>
+          </p>
+        </div>
+        <div class="center col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">MENU</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p *ngFor="let item of menu">
+            <a href="#!">{{ item }}</a>
+          </p>
+        </div>
+        <div class="center col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">OFFICE ADDRESSES</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+            <p *ngFor="let officialAdd of officialAddress">
+                <a href="#!">{{ officialAdd }}</a>
+            </p>
+        </div>
+        <div class="center col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">AMERTAT MEDICAL TOURISM</a>
+    </div>
+  </footer>
