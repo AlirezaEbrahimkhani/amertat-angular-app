@@ -11,7 +11,8 @@ import { HomeComponent } from './home/home.component';
 
 const routes : Routes = [
   {
-    path : "amertat",
+    path : "",
+    component : HomeComponent,
     children : [
       {
         path : "medical-service",
@@ -33,7 +34,7 @@ const routes : Routes = [
   },
   {
     path : "**",
-    redirectTo : "/"
+    redirectTo : ""
   }
 ]
 @NgModule({
