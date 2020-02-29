@@ -1,0 +1,40 @@
+.navbar{
+    border-top: gray 1px solid;
+    top: 86px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+}
+
+.navbar ul{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar ul li:hover{
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1300px){
+    .navbar{
+        top: 76px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navbar{
+        top: 123px;
+    }
+}
