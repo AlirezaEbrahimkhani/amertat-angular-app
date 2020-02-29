@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsModalComponent implements OnInit {
 
+  feedBacks : string[] = [
+    "haji namosan karet doroste = 5",
+    "haji karet doroste = 4",
+    "haji karet okeye = 3",
+    "haji karet yekam gir dare = 2",
+    "haji razi nistam = 1",
+    "haji namosan gand zadi = 0"
+  ]
+
   constructor() { }
 
   ngOnInit() {
