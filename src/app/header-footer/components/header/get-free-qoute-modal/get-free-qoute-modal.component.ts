@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetFreeQouteModalComponent implements OnInit {
 
+  radioMethod : string[] = [
+    "WhatsApp",
+    "Telegram",
+    "FaceBook",
+    "Email",
+    "Phone",
+    "Imo"
+  ]
+
   constructor() { }
 
   ngOnInit() {
