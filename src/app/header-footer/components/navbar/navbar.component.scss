@@ -10,7 +10,11 @@
 .navbar ul{
     width: 100%;
     justify-content: center;
-    display: flex;
+    display: contents;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color : black;
 }
 
 .navbar ul li:hover{

@@ -1,0 +1,15 @@
+button {
+    width: 100%;
+    margin-top: 60px;
+}
+
+mat-radio-button {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 685px){
+    mat-radio-group { 
+        display: flex;
+        flex-direction: column;
+    }
+  }
