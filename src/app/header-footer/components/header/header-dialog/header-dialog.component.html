@@ -2,13 +2,11 @@
  
 
   <span *ngIf="type == 'contact'">
-    <div class="font-size-2 text-center" id="contact-text">
-        You can also find us on:<br/>
-        <br/>
-        <a>Whatsapp</a><br/>
-        <a>Telegram</a><br/>
-        <a>Instagram</a>
-      </div>
+    <app-contact-us-modal></app-contact-us-modal>
   </span>
-  <span *ngIf="type == 'start'"></span>
-  <span *ngIf="type == 'qoute'"></span>
+  <span *ngIf="type == 'start'">
+    <app-get-started-modal></app-get-started-modal>
+  </span>
+  <span *ngIf="type == 'qoute'">
+    <app-get-free-qoute-modal></app-get-free-qoute-modal>
+  </span>
