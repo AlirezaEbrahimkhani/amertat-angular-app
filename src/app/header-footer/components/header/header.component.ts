@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
 
   openModal(type : string){
     const dialog = this.dialog.open(HeaderDialogComponent, {
-      width: "400px",
+      width: "700px",
       height: "600px"
     });
     if(type == "contact")
