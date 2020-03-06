@@ -1,32 +1,39 @@
 <form class="form">
-    <mat-form-field class="half-width">
-        <mat-label>First name :</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>Last Name :</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>Phone Number :</mat-label>
-        <input matInput placeholder="Ex. +989102525256">
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>Subject :</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field class="full-width">
-        <mat-label>Address : </mat-label>
-        <textarea matInput placeholder="Ex. 100 Main St"></textarea>
-      </mat-form-field>
-      <mat-form-field class="full-width">
-        <mat-label>Message : </mat-label>
-        <input matInput #message maxlength="200" placeholder="Please write something ...">
-        <mat-hint align="end">{{message.value.length}} / 200</mat-hint>
-      </mat-form-field>
-      <mat-radio-group>
-        <mat-label>Which method do you want to use ?</mat-label><br><br>
-        <mat-radio-button *ngFor="let item of radioMethod" value = item >{{ item }}</mat-radio-button>
-      </mat-radio-group>
-    <button class="btn btn-primary" type="submit" >Submit</button>
+  <mat-form-field class="half-width">
+    <mat-label>First name :</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>Last Name :</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>Phone Number :</mat-label>
+    <input matInput placeholder="Ex. +989102525256" />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>Subject :</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Address : </mat-label>
+    <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Message : </mat-label>
+    <input
+      matInput
+      #message
+      maxlength="200"
+      placeholder="Please write something ..."
+    />
+    <mat-hint align="end">{{ message.value.length }} / 200</mat-hint>
+  </mat-form-field>
+  <mat-radio-group>
+    <mat-label>Which method do you want to use ?</mat-label><br /><br />
+    <mat-radio-button *ngFor="let item of radioMethod" value="item">{{
+      item
+    }}</mat-radio-button>
+  </mat-radio-group>
+  <button class="btn btn-primary" type="submit">Submit</button>
 </form>

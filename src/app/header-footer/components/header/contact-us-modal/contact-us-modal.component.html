@@ -1,33 +1,35 @@
 <form class="form">
-    <mat-form-field class="half-width">
-        <mat-label>First name :</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>Last Name :</mat-label>
-        <input matInput>
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>Phone Number :</mat-label>
-        <input matInput placeholder="Ex. +989102525256">
-      </mat-form-field>
-      <mat-form-field class="half-width">
-        <mat-label>FeedBack : </mat-label>
-        <mat-select disableRipple>
-          <mat-option *ngFor="let item of feedBacks; let i = index" value = i>{{ item }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field class="full-width">
-        <mat-label>Subject :</mat-label>
-        <input matInput placeholder="Ex. Ethics of doctors">
-      </mat-form-field>
-      <mat-form-field class="full-width">
-        <mat-label>Email :</mat-label>
-        <input matInput placeholder="Ex. example@amertat.com">
-      </mat-form-field>
-      <mat-form-field class="full-width">
-        <mat-label>Address : </mat-label>
-        <textarea matInput placeholder="Ex. 100 Main St"></textarea>
-      </mat-form-field>
-    <button class="btn btn-primary" type="submit" >Submit</button>
+  <mat-form-field class="half-width">
+    <mat-label>First name :</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>Last Name :</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>Phone Number :</mat-label>
+    <input matInput placeholder="Ex. +989102525256" />
+  </mat-form-field>
+  <mat-form-field class="half-width">
+    <mat-label>FeedBack : </mat-label>
+    <mat-select disableRipple>
+      <mat-option *ngFor="let item of feedBacks; let i = index" value="i">{{
+        item
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Subject :</mat-label>
+    <input matInput placeholder="Ex. Ethics of doctors" />
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Email :</mat-label>
+    <input matInput placeholder="Ex. example@amertat.com" />
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Address : </mat-label>
+    <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+  </mat-form-field>
+  <button class="btn btn-primary" type="submit">Submit</button>
 </form>

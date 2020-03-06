@@ -1,66 +1,65 @@
-#header{
-    position: fixed;
+#header {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+#header-title {
+  width: 35%;
+  text-align: center;
+
+  div {
+    margin-top: 10px;
+  }
+}
+
+#header-btn-group {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-btn {
+  width: 25%;
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  #header-title {
     width: 100%;
-    padding: 15px;
-    z-index: 1;
-    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  #header-btn-group {
+    width: 100%;
+  }
 }
 
-#header-title{
-    width: 35%;
-    text-align: center;
-
-    div{
-        margin-top: 10px;
-    }
-}
-
-#header-btn-group{
-    width: 65%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header-btn{
-    width: 25%;
-    text-align: center;
-    border-radius: 25px;
-    padding: 10px;
-}
-
-@media only screen and (max-width: 991px){
-    #header-title{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #header-btn-group{
-        width: 100%;
-    }
-
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1300px){
-    .header-btn{
-        width: 20%;
-        padding: 5px;
-    }
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+  .header-btn {
+    width: 20%;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .header-btn{
-        padding: 2px 5px;
-    }
+  .header-btn {
+    padding: 2px 5px;
+  }
 }
-#header-btn-1{
-    background-color: rgb(228, 218, 218);
-}
-
-#header-btn-2{
-    color: white;
-    background-color: rgb(31, 63, 120);
+#header-btn-1 {
+  background-color: rgb(228, 218, 218);
 }
 
-#header-btn-3{
-    color: white;
-    background-color: #666;
+#header-btn-2 {
+  color: white;
+  background-color: rgb(31, 63, 120);
+}
+
+#header-btn-3 {
+  color: white;
+  background-color: #666;
 }
