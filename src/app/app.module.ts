@@ -7,6 +7,7 @@ import { MaterialModule } from './shared/material.module';
 import { HeaderFooterModule } from './header-footer/header-footer.module';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { SharedModule } from './shared/shared.module';
 
 
 const routes : Routes = [
@@ -40,7 +41,7 @@ const routes : Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,8 +49,9 @@ const routes : Routes = [
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

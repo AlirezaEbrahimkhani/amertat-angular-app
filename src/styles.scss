@@ -1,12 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.text-center{
+.text-center {
     width: 100%;
     text-align: center;
+}
+
+.big-font-size {
+    font-size: 100px;
+    letter-spacing: -2px;
 }
 
 .font-size-1 {
@@ -14,7 +27,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     line-height: 35px;
 }
 
-.font-size-2{
+.font-size-2 {
     font-size: 1rem;
     line-height: 30px;
 }
@@ -26,24 +39,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .full-width {
     width: 100%;
-  }
+}
 
-  .half-width {
-    width: 48%;
-    margin: 0 5px;
-  }
-  
-@media only screen and (max-width: 685px){
-  .half-width {
-      width: 100%;
-  }
+.half-width {
+    width: 50%;
+    padding: 0 5px;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .big-font-size {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .half-width {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1300px) {
     .font-size-1 {
         font-size: 1.5rem;
     }
-    .font-size-2{
+
+    .font-size-2 {
         font-size: .75rem;
     }
 }
@@ -52,8 +73,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .font-size-1 {
         font-size: 1.2rem;
     }
-    .font-size-2{
+
+    .font-size-2 {
         font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .big-font-size {
+        font-size: 45px;
     }
 }
 
@@ -61,7 +89,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .font-size-1 {
         font-size: 1.2rem;
     }
-    .font-size-2{
+
+    .font-size-2 {
         font-size: .45rem;
     }
 }
