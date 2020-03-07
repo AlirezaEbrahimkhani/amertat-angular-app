@@ -7,31 +7,38 @@
 }
 
 #header-title {
-  width: 35%;
+  width: 50%;
   text-align: center;
 
   div {
     margin-top: 10px;
+    padding-left: 70px;
+    text-align: left;
   }
 }
 
 #header-btn-group {
-  width: 65%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .header-btn {
-  width: 25%;
+  width: 30%;
   text-align: center;
   border-radius: 25px;
-  padding: 10px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 991px) {
   #header-title {
     width: 100%;
     margin-bottom: 10px;
+
+    div{
+      padding-left: 0px;
+      text-align: center;
+    }
   }
   #header-btn-group {
     width: 100%;
@@ -40,8 +47,8 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1300px) {
   .header-btn {
-    width: 20%;
-    padding: 5px;
+    width: 25%;
+    padding: 0px;
   }
 }
 
