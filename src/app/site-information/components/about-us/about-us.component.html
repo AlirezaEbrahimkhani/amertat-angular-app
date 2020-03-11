@@ -1,75 +1,22 @@
-<div class="about-us">
-    <div class="header-img">
-        <img src="../../../../assets/about-us-header.jpg" alt="header-img">
-        <div class="centered-text">
-            <pre>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</pre>
-            <pre>Lorem ipsum dolor sit amet consectetur adipiscing elit</pre>
-            <pre>qui officia deserunt mollit anim</pre>
-            <button mat-button> Contact Us </button>
-        </div>
-    </div>
-    <div class="who-we-are">
-        <p class="who-title">Who we are ?</p>
-         <p class="who-text">AriaMedTour is associated with the most famous and prestigious hospitals, 
-            clinics, specialists and doctors.Selected hospitals and clinics are well 
-            equipped with the finest infrastructure, modern equipment, trained supportive 
-            staffs and international standards of hygiene and care for the comfort of patients.
-            Our services are planned and scheduled in advance. We adhere strongly to the medical 
-            ethics and standards and use our international knowledge in the field of medical 
-            tourism in Iran to deliver cost-effective, timely, safe and quality services.
-            In fact, we cater to all the nuances of medical tourism and guide you through every step.
-            We try to understand your expectations and give the best services for your medical travel 
-            to Iran. We examine your medical condition comprehensively and suggest a customized mix of hospitals, 
-            clinics, and top surgeons. All AriaMedTour medical treatments’ costs are 40 to 200 percent cheaper than 
-            those in other countries.</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p class="header">Our services</p>
-                <div class="services">
-                    <mat-accordion>
-                        <mat-expansion-panel *ngFor="let service of Services">
-                          <mat-expansion-panel-header>
-                            <mat-panel-title>
-                                {{ service }}
-                            </mat-panel-title>
-                          </mat-expansion-panel-header>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in</p>
-                        </mat-expansion-panel>
-                      </mat-accordion>
-                </div>
+<header id="about-us-section">
+  <div class="dark-overlay">
+    <div class="about-us-inner container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-5 color">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            consequuntur adipisci assumenda error distinctio?
+          </h1>
+          <div *ngFor="let item of lines" class="d-flex">
+            <div class="p-4 align-self-start color">
+              <i class="fas fa-check fa-2x"></i>
             </div>
-            <div class="col">
-                <p class="header">Contact Us</p>
-                <div class="contact-us">
-                    <mat-form-field appearance="outline">
-                        <mat-label>First Name</mat-label>
-                        <input matInput placeholder="Please Enter Your First Name :">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Last Name</mat-label>
-                        <input matInput placeholder="Please Enter Your Last Name :">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline" class="width">
-                        <mat-label>Phone Number</mat-label>
-                        <input matInput placeholder="Please Enter Your Phone Number :">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline" class="width">
-                        <mat-label>Your Email</mat-label>
-                        <input matInput placeholder="Please Enter Your Your Email :">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Your Message</mat-label>
-                        <input matInput placeholder="Please Enter Your Your Message :">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Description</mat-label>
-                        <textarea matInput placeholder="Description"></textarea>
-                    </mat-form-field>
-                    <button class="btn btn-primary">Submit</button>
-                </div>
+            <div class="p-4 align-self-end color">
+              {{ item }}
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</header>
