@@ -45,3 +45,18 @@
     display: none !important;
   }
 }
+
+#authors img {
+  margin-top: -50px;
+}
+#authors .card:hover {
+  background: #3292a6;
+  color: #fff;
+}
+#authors .fab {
+  color: #fff;
+}
+
+.share-bg-color {
+  background-color: rgb(39, 27, 149);
+}
