@@ -1,35 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  selector: "app-about-us",
+  templateUrl: "./about-us.component.html",
+  styleUrls: ["./about-us.component.scss"]
 })
 export class AboutUsComponent implements OnInit {
+  lines: string[] = [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae."
+  ];
 
-  Services : string[] = [
-    "Accomodation",
-    "Medical Appointments",
-    "Transportation",
-    "Guide and Translation",
-    "Accomodation",
-    "Medical Appointments",
-    "Transportation",
-    "Guide and Translation"
+  persons : string[] = [
+    "person1.jpg",
+    "person2.jpg",
+    "person3.jpg",
+    "person4.jpg",
+    "person1.jpg",
+    "person2.jpg",
+    "person3.jpg",
+    "person4.jpg",
   ]
 
-  Lables : string[] = [
-    "First Name",
-    "Last Name",
-    "Phone Number",
-    "Your Email",
-    "Your Message",
-    "Description"
-  ]
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
