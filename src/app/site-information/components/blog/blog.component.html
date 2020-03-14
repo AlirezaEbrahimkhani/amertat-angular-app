@@ -1,0 +1,43 @@
+<app-simple-cover
+  imgSrc="../../../../assets/Blog/blog-background.jpg"
+  title="Read Our Blog"
+></app-simple-cover>
+
+<section id="blog" class="py-3">
+  <div class="container">
+    <div class="text-center margin">
+      <h1>Everything you need to Know</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, culpa.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card-columns">
+          <div
+            class="card"
+            *ngFor="let item of blogPostNumber; let i = index"
+            (click)="onClickCard()"
+          >
+            <img
+              src="../../../../assets/Blog/blog{{ i + 1 }}.jpg"
+              alt=""
+              class="img-fluid card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Blog Post {{ item }}</h4>
+              <small class="text-muted">Written by Jeff on 05/20</small>
+              <hr />
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                facilis, sequi excepturi, quisquam, dignissimos molestiae dicta
+                dolore dolores quas vel sunt placeat tempora expedita suscipit.
+                Magni vel iusto mollitia exercitationem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

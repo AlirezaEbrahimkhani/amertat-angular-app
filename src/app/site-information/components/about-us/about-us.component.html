@@ -2,7 +2,7 @@
   <div class="dark-overlay">
     <div class="about-us-inner container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 d-none d-lg-block">
           <h1 class="display-5 color">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
             consequuntur adipisci assumenda error distinctio?
@@ -15,6 +15,9 @@
               {{ item }}
             </div>
           </div>
+        </div>
+        <div class="col-lg-4">
+          <h1 class="color my-auto header-title">About Us</h1>
         </div>
       </div>
     </div>
@@ -63,7 +66,7 @@
         <div class="card">
           <div class="card-body">
             <img
-              src="./../../../../assets/{{ item }}"
+              src="./../../../../assets/About Us/{{ item }}"
               alt=""
               class="img-fluid rounded-circle w-50 mb-3"
             />
