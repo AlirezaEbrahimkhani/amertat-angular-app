@@ -44,6 +44,10 @@
   .d-flex {
     display: none !important;
   }
+
+  .header-title{
+    margin-left: 0 !important;;
+  }
 }
 
 #authors img {
@@ -59,4 +63,10 @@
 
 .share-bg-color {
   background-color: rgb(39, 27, 149);
+}
+
+.header-title {
+  text-align: center;
+  margin-top: 250px !important;
+  margin-left: 120px;
 }
