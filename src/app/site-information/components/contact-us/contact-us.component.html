@@ -2,3 +2,136 @@
   imgSrc="../../../../assets/contact-us/contact-us.jpg"
   title="Contact-us"
 ></app-simple-cover>
+<section id="contact" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="text-center margin">
+        <h1>Stay in touch with us</h1>
+        <p>
+          Share your feedback with us on the form below
+        </p>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-body">
+            <h4>Get In Touch</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <h4>Address</h4>
+            <p>550 Main st, Boston MA</p>
+            <h4>Email</h4>
+            <p>test@test.com</p>
+            <h4>Phone</h4>
+            <p>(555) 555-5555</p>
+            <h4>Telegram ID</h4>
+            <p>t.me/testTelegramId</p>
+            <h4>Instagram</h4>
+            <p>AMERTAT MEDICAL TOURISM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card p-4">
+          <div class="card-body">
+            <h3 class="text-center">Please fill out this form to contact us</h3>
+            <hr />
+            <div class="row">
+              <mat-form-field class="half-width">
+                <mat-label>First name :</mat-label>
+                <input matInput />
+              </mat-form-field>
+              <mat-form-field class="half-width">
+                <mat-label>Last Name :</mat-label>
+                <input matInput />
+              </mat-form-field>
+              <mat-form-field class="half-width">
+                <mat-label>Phone Number :</mat-label>
+                <input matInput placeholder="Ex. +989102525256" />
+              </mat-form-field>
+              <mat-form-field class="half-width">
+                <mat-label>FeedBack : </mat-label>
+                <mat-select disableRipple>
+                  <mat-option
+                    *ngFor="let item of feedBacks; let i = index"
+                    value="i"
+                    >{{ item }}</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <mat-label>Subject :</mat-label>
+                <input matInput placeholder="Ex. Ethics of doctors" />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <mat-label>Email :</mat-label>
+                <input matInput placeholder="Ex. example@amertat.com" />
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <mat-label>Address : </mat-label>
+                <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-outline-danger btn-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAFF -->
+<section id="staff" class="py-5 text-center bg-dark text-white">
+  <div class="container">
+    <h1>Our Staff</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-3">
+        <img
+          src="../../../../assets/contact-us/person1.jpg"
+          alt=""
+          class="img-fluid rounded-circle mb-2"
+        />
+        <h4>Parham Ghasemloo</h4>
+        <small>Project Manager</small>
+      </div>
+      <div class="col-md-3">
+        <img
+          src="../../../../assets/contact-us/person2.jpg"
+          alt=""
+          class="img-fluid rounded-circle mb-2"
+        />
+        <h4>Alireza Ebrahimkhani</h4>
+        <small>Web Developer</small>
+      </div>
+      <div class="col-md-3">
+        <img
+          src="../../../../assets/contact-us/person3.jpg"
+          alt=""
+          class="img-fluid rounded-circle mb-2"
+        />
+        <h4>Alireza Yousefi Amiri</h4>
+        <small>Web Developer</small>
+      </div>
+      <div class="col-md-3">
+        <img
+          src="../../../../assets/contact-us/person4.jpg"
+          alt=""
+          class="img-fluid rounded-circle mb-2"
+        />
+        <h4>Steve Smith</h4>
+        <small>Web Developer</small>
+      </div>
+    </div>
+  </div>
+</section>
