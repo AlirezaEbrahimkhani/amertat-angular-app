@@ -5,12 +5,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MaterialModule } from './material.module';
 import { SimpleCoverComponent } from './components/simple-cover/simple-cover.component';
 import { CommonModule } from '@angular/common';
+import { PopularDestinationComponent } from './components/popular-destination/popular-destination.component';
 
 
 
 
 @NgModule({
-  declarations: [SimpleCoverComponent],
+  declarations: [SimpleCoverComponent , PopularDestinationComponent],
   imports: [
     FormlyBootstrapModule,
     ReactiveFormsModule,
@@ -24,6 +25,7 @@ import { CommonModule } from '@angular/common';
     MDBBootstrapModule,
     MaterialModule,
     SimpleCoverComponent,
+    PopularDestinationComponent
   ]
 })
 export class SharedModule { }

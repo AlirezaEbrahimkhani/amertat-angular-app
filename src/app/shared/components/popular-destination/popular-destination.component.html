@@ -1,0 +1,32 @@
+<div class="text-center margin">
+  <h1>Popular Destinations</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur.
+  </p>
+</div>
+<div class="width my-5">
+  <div class="row">
+    <div
+      class="col-lg-3 col-md-6 mb-5"
+      *ngFor="let item of cardNumber; let i = index"
+    >
+      <div class="card">
+        <img
+          src="  ../../../../assets/tourism-service/city{{ i + 1 }}.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card {{ item }}</h5>
+          <p class="card-text text-justify">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
