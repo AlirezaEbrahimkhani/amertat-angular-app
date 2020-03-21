@@ -33,14 +33,12 @@ import {
   MatTableModule,
   MatTabsModule,
   MatStepperModule,
-  MatBadgeModule,
-  
+  MatBadgeModule
 } from "@angular/material";
 import { CdkTableModule } from "@angular/cdk/table";
 import { BidiModule } from "@angular/cdk/bidi";
 import { DragDropModule } from "@angular/cdk/drag-drop";
 @NgModule({
- 
   imports: [
     BidiModule,
     MatTreeModule,
@@ -116,8 +114,7 @@ import { DragDropModule } from "@angular/cdk/drag-drop";
     MatTooltipModule,
     CdkTableModule,
     DragDropModule,
-    MatBadgeModule,
-    
+    MatBadgeModule
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {}
