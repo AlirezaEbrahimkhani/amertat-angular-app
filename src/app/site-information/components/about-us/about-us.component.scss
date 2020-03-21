@@ -1,53 +1,5 @@
-#about-us-section {
-  background: url("../../../../assets/About\ Us/images.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 743px;
-}
-
-#about-us-section .dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 875px;
-  background: rgba(46, 45, 45, 0.3);
-}
-
-#about-us-section .about-us-inner {
-  padding-top: 150px;
-}
-
 .color {
   color: white;
-}
-
-@media only screen and (max-width: 479px) {
-  .col-lg-8 {
-    top: 175px;
-    text-align: center;
-  }
-
-  #about-us-section {
-    min-height: 557px !important;
-  }
-
-  .display-5 {
-    font-size: 32px;
-  }
-
-  .dark-overlay {
-    min-height: 736px !important;
-  }
-
-  .d-flex {
-    display: none !important;
-  }
-
-  .header-title{
-    margin-left: 0 !important;;
-  }
 }
 
 #authors img {
@@ -65,8 +17,8 @@
   background-color: rgb(39, 27, 149);
 }
 
-.header-title {
-  text-align: center;
-  margin-top: 250px !important;
-  margin-left: 120px;
+@media only screen and (max-width: 479px) {
+  .display-5 {
+    font-size: 32px;
+  }
 }

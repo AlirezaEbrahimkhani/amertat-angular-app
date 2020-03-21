@@ -1,28 +1,7 @@
-<header id="about-us-section">
-  <div class="dark-overlay">
-    <div class="about-us-inner container">
-      <div class="row">
-        <div class="col-lg-8 d-none d-lg-block">
-          <h1 class="display-5 color">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-            consequuntur adipisci assumenda error distinctio?
-          </h1>
-          <div *ngFor="let item of lines" class="d-flex">
-            <div class="p-4 align-self-start color">
-              <i class="fas fa-check fa-2x"></i>
-            </div>
-            <div class="p-4 align-self-end color">
-              {{ item }}
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <h1 class="color my-auto header-title">About Us</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<app-simple-cover
+  imgSrc="../../../../assets/About\ Us/images.jpeg"
+  title="Read More About Us"
+></app-simple-cover>
 <div class="normal-text">
   <h3 class="font-size-1">About Our Team</h3>
   <p class="font-size-2">
@@ -119,7 +98,7 @@
     <div class="row">
       <div class="col-md-6">
         <img
-          src="./../../../../assets/about-us-header.jpg"
+          src="./../../../../assets/About Us/about-us-header.jpg"
           alt="explore-section"
           class="img-fluid mb-3 rounded-circle"
         />
