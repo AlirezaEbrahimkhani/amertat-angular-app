@@ -13,9 +13,19 @@
     height: 55px;
 }
 
+.brand-text{
+    color: #4285f4 !important;
+}
+
 @media only screen and (min-width: 991px) and (max-width: 1300px){
     #navbar{
         top: 76px;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .brand-text{
+        color: white !important;
     }
 }
 
