@@ -1,13 +1,14 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-import { AppComponent } from "./app.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MaterialModule } from "./shared/material.module";
-import { HeaderFooterModule } from "./header-footer/header-footer.module";
-import { Routes, RouterModule } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { SharedModule } from "./shared/shared.module";
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/material.module';
+import { HeaderFooterModule } from './header-footer/header-footer.module';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { SharedModule } from './shared/shared.module';
+import { FilterModule } from './filter/filter.module';
 
 const routes: Routes = [
   {
@@ -48,7 +49,8 @@ const routes: Routes = [
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
-    SharedModule
+    SharedModule,
+    FilterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
