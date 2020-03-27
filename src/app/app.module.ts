@@ -9,6 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { FilterModule } from './filter/filter.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 const routes: Routes = [
   {
@@ -51,6 +52,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     SharedModule,
     FilterModule,
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
