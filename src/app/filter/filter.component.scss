@@ -30,3 +30,19 @@
     width: 50%;
     padding: 2%;
 }
+
+@media only screen and (max-width: 1000px){
+    .filter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .filter-right{
+        width: 100%;
+    }
+}
