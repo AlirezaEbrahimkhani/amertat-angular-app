@@ -9,7 +9,8 @@ import { ContactUsModalComponent } from './components/header/contact-us-modal/co
 import { MaterialModule } from '../shared/material.module';
 import { GetStartedModalComponent } from './components/header/get-started-modal/get-started-modal.component';
 import { GetFreeQouteModalComponent } from './components/header/get-free-qoute-modal/get-free-qoute-modal.component';
-
+import { NavbarModule, WavesModule, ButtonsModule, MdbIconComponent, IconsModule, DropdownModule } from 'angular-bootstrap-md'
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,12 @@ import { GetFreeQouteModalComponent } from './components/header/get-free-qoute-m
   imports: [
     CommonModule,
     MaterialModule,
+    NavbarModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule,
+    BrowserModule,
+    DropdownModule.forRoot(),
   ],
   exports : [
     HeaderComponent, 
