@@ -1,20 +1,35 @@
-<mat-card style="background-color: darkgrey; margin: 2%;display: flex;">
-        <div style="width: 30%;">
-    
-            <div class="font-size-1 text-center full-width">Find the best options for you</div>
-            
-            <div class="font-size-2 text-center full-width">Cities</div>
-            <mat-checkbox [color]="primary" *ngFor="let city of cities" class="text-center full-width" style="display: block;" (change)="filter($event,city)" [checked]='true'>{{city}}</mat-checkbox>
-            
-            <div class="font-size-2 text-center full-width">Types</div>
-            <mat-checkbox [color]="primary" *ngFor="let type of types" class="text-center full-width" style="display: block;" [checked]='true'>{{type}}</mat-checkbox>
-    
-</div>
-    
-    
-        <div style="width: 70%;padding: 2%;display: flex;flex-wrap: wrap;">
-            <app-filter-part *ngFor="let part of parts" [part]="part" style="width: 50%;padding: 2%;"></app-filter-part>
-        </div>
-      
-    
+<mat-card class="filter">
+  <div class="filter-left">
+    <div class="font-size-1 text-center full-width filter-left-title">
+      Find the best options for you
+    </div>
+
+    <div class="font-size-2 text-center full-width"><b>Cities</b></div>
+    <mat-checkbox
+      [color]="primary"
+      *ngFor="let city of fullCities"
+      class="text-center full-width checkboxes"
+      (change)="filterByCity($event, city)"
+      [checked]="true"
+      >{{ city }}</mat-checkbox
+    >
+
+    <div class="font-size-2 text-center full-width"><b>Types</b></div>
+    <mat-checkbox
+      [color]="primary"
+      *ngFor="let type of fullTypes"
+      class="text-center full-width checkboxes"
+      (change)="filterByType($event, type)"
+      [checked]="true"
+      >{{ type }}</mat-checkbox
+    >
+  </div>
+
+  <div class="filter-right">
+    <app-filter-part
+      *ngFor="let part of parts"
+      [part]="part"
+      class="filter-parts"
+    ></app-filter-part>
+  </div>
 </mat-card>

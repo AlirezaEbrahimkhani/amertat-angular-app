@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { element } from 'protractor';
 
 @Component({
   selector: "app-filter",
@@ -7,41 +6,99 @@ import { element } from 'protractor';
   styleUrls: ["./filter.component.scss"]
 })
 export class FilterComponent implements OnInit {
-  parts1 :any[]=[];
-  @Input() parts: any[]=[{ title: "Tehran" }, { title: "Zanjan" },{title: "Karaj"}];
-  @Input() cities: any[] = ["Tehran" , "Zanjan"];
-  @Input() types: any[] = ["Hotel","Restaurant"];
+  parts: Array<any> = [];
+  cities: Array<string> = [];
+  types: Array<string> = [];
 
-  constructor() {
-  }
+  @Input() fullParts: Array<any> = [
+    {
+      id: 1,
+      type: "Restaurant",
+      city: "Tehran",
+      hotel: "Hotel",
+      price: "10000$",
+      text:
+        "hello hello hello hello hello hello hello hello hello hello hello hello hello "
+    },
+    {
+      id: 2,
+      type: "Hotel",
+      city: "Zanjan",
+      hotel: "Hotel",
+      price: "10000$",
+      text:
+        "hello hello hello hello hello hello hello hello hello hello hello hello hello "
+    },
+    {
+      id: 3,
+      type: "Hotel",
+      city: "Tehran",
+      hotel: "Hotel",
+      price: "10000$",
+      text:
+        "hello hello hello hello hello hello hello hello hello hello hello hello hello "
+    },
+    {
+      id: 4,
+      type: "Hotel",
+      city: "Zanjan",
+      hotel: "Hotel",
+      price: "10000$",
+      text:
+        "hello hello hello hello hello hello hello hello hello hello hello hello hello "
+    }
+  ];
+  @Input() fullCities: Array<any> = ["Tehran", "Zanjan"];
+  @Input() fullTypes: Array<any> = ["Hotel", "Restaurant"];
+
+  constructor() {}
 
   ngOnInit() {
-    this.parts.forEach(element=>{
-      this.parts1.push(element)
-    })
+    this.parts = Object.assign([], this.fullParts);
+    this.cities = Object.assign([], this.fullCities);
+    this.types = Object.assign([], this.fullTypes);
   }
 
-
-  filter(checked,item){
-    if(checked.checked){
-      this.parts1.forEach(element=>{        
-        if(element.title ==item)
-{
-  this.parts.push(element)
-}
-      })
+  filter(item) {
+    let result = 0;
+    for (let city of this.cities) {
+      if (city == item.city) {
+        result++;
+        break;
+      }
     }
-    else if(!checked.checked){
-
-      this.parts.forEach((element,index)=>{
-        
-        if(element.title == item)
-          {     
-            this.parts.splice(index,1);
-          }
-      })
+    for (let type of this.types) {
+      if (type == item.type) {
+        result++;
+        break;
+      }
     }
-        
-    
+    if (result == 2) return true;
+    else return false;
+  }
+
+  filterByCity(checked, item) {
+    if (checked.checked) this.cities.push(item);
+    else if (!checked.checked) {
+      this.cities.forEach((element, index) => {
+        if (element == item) this.cities.splice(index, 1);
+      });
+    }
+    this.parts = [];
+    this.fullParts.forEach(element => {
+      if (this.filter(element)) this.parts.push(element);
+    });
+  }
+  filterByType(checked, item) {
+    if (checked.checked) this.types.push(item);
+    else if (!checked.checked) {
+      this.types.forEach((element, index) => {
+        if (element == item) this.types.splice(index, 1);
+      });
+    }
+    this.parts = [];
+    this.fullParts.forEach(element => {
+      if (this.filter(element)) this.parts.push(element);
+    });
   }
 }
