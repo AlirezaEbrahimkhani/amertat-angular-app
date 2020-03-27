@@ -1,56 +1,91 @@
 <div id="empty-space"></div>
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<mdb-navbar
+id="navbar"
+  SideClass="navbar navbar-expand-lg navbar-dark bg-primary"
+  [containerInside]="false"
+>
+  <mdb-navbar-brand
+    >
+  <links>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown"
-          >Medical Services</a
+        <a class="nav-link waves-light" mdbWavesEffect
+          >Home</a
         >
-        <div class="dropdown-menu">
-          <a href="" class="dropdown-item">Liposuction</a>
-          <a href="" class="dropdown-item">Hair Transplant</a>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Medical Services<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Liposuction</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Hair Transplant</a
+          >
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Accomodation Services</a>
+        <a class="nav-link waves-light" mdbWavesEffect
+          >Accomodation Services</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tourism Services</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown"
-          >Information</a
+        <a class="nav-link waves-light" mdbWavesEffect
+          >Tourism Services</a
         >
-        <div class="dropdown-menu">
-          <a href="" class="dropdown-item">Docotrs</a>
-          <a href="" class="dropdown-item">Hospitals</a>
-          <a href="" class="dropdown-item">Cities</a>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Information<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Doctors</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Hospitals and Clinics</a
+          >
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+            >Cities</a
+          >
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link waves-light" mdbWavesEffect
+          >Blog</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link waves-light" mdbWavesEffect
+          >About Us</a
+        >
       </li>
     </ul>
-  </div>
-</nav>
+
+  </links>
+  </mdb-navbar-brand
+  >
+</mdb-navbar>
