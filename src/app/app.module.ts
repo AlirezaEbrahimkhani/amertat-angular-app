@@ -8,6 +8,7 @@ import { HeaderFooterModule } from './header-footer/header-footer.module';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
+import { FilterModule } from './filter/filter.module';
 
 
 const routes : Routes = [
@@ -50,6 +51,7 @@ const routes : Routes = [
     HeaderFooterModule,
     RouterModule.forRoot(routes),
     SharedModule,
+    FilterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
