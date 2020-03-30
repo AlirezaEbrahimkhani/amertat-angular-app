@@ -45,14 +45,14 @@ const routes: Routes = [
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
+    MDBBootstrapModule.forRoot(),
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
     SharedModule,
-    FilterModule,
-    MDBBootstrapModule.forRoot(),
+    FilterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
