@@ -23,6 +23,11 @@
   }
 }
 
+.dropdown-item:hover {
+  color: white;
+  background-color: #4285f4;
+}
+
 @media only screen and (max-width: 999px) {
   .brand-text {
     color: white !important;
@@ -30,10 +35,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .dropdown-item:hover {
-    color: white;
-    background-color: #4285f4;
-  }
   #empty-space {
     height: 179px;
   }
