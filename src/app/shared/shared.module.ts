@@ -6,9 +6,10 @@ import { MaterialModule } from "./material.module";
 import { SimpleCoverComponent } from "./components/simple-cover/simple-cover.component";
 import { CommonModule } from "@angular/common";
 import { PopularDestinationComponent } from "./components/popular-destination/popular-destination.component";
+import { DoctorsCardComponent } from './components/doctors-card/doctors-card.component';
 
 @NgModule({
-  declarations: [SimpleCoverComponent, PopularDestinationComponent],
+  declarations: [SimpleCoverComponent, PopularDestinationComponent, DoctorsCardComponent],
   imports: [
     FormlyBootstrapModule,
     ReactiveFormsModule,
@@ -22,7 +23,8 @@ import { PopularDestinationComponent } from "./components/popular-destination/po
     MDBBootstrapModule,
     MaterialModule,
     SimpleCoverComponent,
-    PopularDestinationComponent
+    PopularDestinationComponent,
+    DoctorsCardComponent,
   ]
 })
 export class SharedModule {}
