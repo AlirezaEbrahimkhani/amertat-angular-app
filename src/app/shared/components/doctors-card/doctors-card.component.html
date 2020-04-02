@@ -1,0 +1,40 @@
+<section class="doctors-card">
+  <div class="card-wrapper row">
+      
+    <div class="col-lg-2 col-md-4 col-sm-6 mb-4" *ngFor="let item of items">
+      <div class="card card-ecommerce">
+        <div class="view overlay z-depth-1">
+          <img
+            [src]="item.imgSrc"
+            alt=""
+            class="card-img-top img-fluid"
+          />
+          <a>
+            <div
+              mdbWavesEffect
+              class="mask rgba-white-slight waves-effect waves-light"
+            ></div>
+          </a>
+        </div>
+
+          <div class="card-body text-center no-padding">
+            <a href="" class="text-muted">
+              <h5>{{item.proficiency}}</h5>
+            </a>
+            <h4 href="" class="card-title">
+              <strong>
+                <a href="">{{item.name}}</a>
+              </strong>
+            </h4>
+            <p class="card-text">
+              {{item.description}}
+            </p>
+            
+            <div class="card-footer">
+                <a href="">More</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
