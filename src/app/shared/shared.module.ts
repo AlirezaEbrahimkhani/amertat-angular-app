@@ -8,12 +8,14 @@ import { CommonModule } from "@angular/common";
 import { PopularDestinationComponent } from "./components/popular-destination/popular-destination.component";
 import { DoctorsCardComponent } from "./components/doctors-card/doctors-card.component";
 import { WavesModule, ButtonsModule } from "angular-bootstrap-md";
+import { ClinicsCardComponent } from "./components/clinics-card/clinics-card.component";
 
 @NgModule({
   declarations: [
     SimpleCoverComponent,
     PopularDestinationComponent,
-    DoctorsCardComponent
+    DoctorsCardComponent,
+    ClinicsCardComponent
   ],
   imports: [
     FormlyBootstrapModule,
@@ -31,7 +33,8 @@ import { WavesModule, ButtonsModule } from "angular-bootstrap-md";
     MaterialModule,
     SimpleCoverComponent,
     PopularDestinationComponent,
-    DoctorsCardComponent
+    DoctorsCardComponent,
+    ClinicsCardComponent
   ]
 })
 export class SharedModule {}
