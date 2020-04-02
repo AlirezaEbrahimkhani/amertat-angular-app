@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-doctors-card",
@@ -8,7 +9,11 @@ import { Component, OnInit, Input } from "@angular/core";
 export class DoctorsCardComponent implements OnInit {
   @Input() items: any[];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  changeToDoctor() {
+    this.router.navigate(["/amertat/information/doctors/doctor"]);
+  }
 }
