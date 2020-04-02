@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-cities-card",
@@ -8,7 +9,11 @@ import { Component, OnInit, Input } from "@angular/core";
 export class CitiesCardComponent implements OnInit {
   @Input() citiesCardInfo: any[] = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  changeToCity() {
+    this.router.navigate(["/amertat/information/cities/city"]);
+  }
 }
