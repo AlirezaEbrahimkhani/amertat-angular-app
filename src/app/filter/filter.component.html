@@ -1,35 +1,76 @@
-<mat-card class="filter">
-  <div class="filter-left">
-    <div class="font-size-1 text-center full-width filter-left-title">
-      Find the best options for you
-    </div>
 
-    <div class="font-size-2 text-center full-width"><b>Cities</b></div>
-    <mat-checkbox
-      [color]="primary"
-      *ngFor="let city of fullCities"
-      class="text-center full-width checkboxes"
-      (change)="filterByCity($event, city)"
-      [checked]="true"
-      >{{ city }}</mat-checkbox
-    >
 
-    <div class="font-size-2 text-center full-width"><b>Types</b></div>
-    <mat-checkbox
-      [color]="primary"
-      *ngFor="let type of fullTypes"
-      class="text-center full-width checkboxes"
-      (change)="filterByType($event, type)"
-      [checked]="true"
-      >{{ type }}</mat-checkbox
-    >
+<div class="container">
+  <div class="row">
+    <section id="basic-example" class="mx-1 full-width">
+      <h2 class="section-heading mb-4 text-center full-width">
+        Find the best option for you
+      </h2>
+
+      <section>
+        <div class="filter filter-basic">
+          <div class="filter-nav row">
+            <button
+              mdbBtn
+              type="button"
+              color="default"
+              mdbWavesEffect
+              (click)="filter('all')"
+            >
+              All
+            </button>
+            <button
+              mdbBtn
+              type="button"
+              color="light-blue"
+              mdbWavesEffect
+              *ngFor="let city of fullCities"
+              (click)="filter(city)"
+            >
+              {{ city }}
+            </button>
+            <button
+              mdbBtn
+              type="button"
+              color="secondary"
+              mdbWavesEffect
+              *ngFor="let type of fullTypes"
+              (click)="filter(type)"
+            >
+              {{ type }}
+            </button>
+          </div>
+
+          <div class="filter-gallery">
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6 mb-md-0 mb-4" *ngFor="let part of parts">
+                <div class="card indigo">
+                  <div class="card-body white-text">
+                    <h5 class="mb-4">{{part.id}}</h5>
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="card-circle d-flex justify-content-center align-items-center"
+                      >
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                    <h2 class="font-weight-bold my-4">{{part.city}}</h2>
+                    <p>
+                      {{part.text}}
+                    </p>
+                    <a
+                      class="btn btn-outline-white btn-rounded waves-effect waves-light"
+                      dideo-checked="true"
+                      >{{part.price}}</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   </div>
-
-  <div class="filter-right">
-    <app-filter-part
-      *ngFor="let part of parts"
-      [part]="part"
-      class="filter-parts"
-    ></app-filter-part>
-  </div>
-</mat-card>
+</div>

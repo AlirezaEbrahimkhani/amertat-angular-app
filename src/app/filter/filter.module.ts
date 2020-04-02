@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FilterComponent } from './filter.component';
 import { FilterPartComponent } from './filter-part/filter-part.component';
-import { MatGridListModule, MatGridTile, MatCard, MatCardModule, MatCheckboxModule } from '@angular/material';
+import { MatGridListModule, MatCardModule, MatCheckboxModule } from '@angular/material';
+import { ButtonsModule, WavesModule, CollapseModule } from 'angular-bootstrap-md';
 
 
 
@@ -13,6 +14,9 @@ import { MatGridListModule, MatGridTile, MatCard, MatCardModule, MatCheckboxModu
     MatGridListModule,
     MatCardModule,
     MatCheckboxModule,
+    ButtonsModule,
+    WavesModule,
+    CollapseModule,
   ],
   exports: [
     FilterComponent,
