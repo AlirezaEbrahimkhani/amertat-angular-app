@@ -33,12 +33,16 @@ const routes: Routes = [
         path: "site-information",
         loadChildren:
           "./site-information/site-information.module#SiteInformationModule"
+      },
+      {
+        path: "home",
+        component: HomeComponent
       }
     ]
   },
   {
     path: "**",
-    redirectTo: ""
+    redirectTo: "amertat/home"
   }
 ];
 @NgModule({
