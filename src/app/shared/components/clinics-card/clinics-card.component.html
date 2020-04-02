@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6" *ngFor="let item of clinicsItem">
+      <div class="card card-cascade my-5">
+        <div class="view view-cascade overlay">
+          <img class="card-img-top" [src]="item.imgSrc" alt="Card image cap" />
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body card-body-cascade text-center">
+          <h4 class="card-title">
+            <i class="fas fa-clinic-medical mx-2"></i
+            ><strong>{{ item.name }}</strong>
+          </h4>
+          <h6 class="font-weight-bold indigo-text py-2">{{ item.usage }}</h6>
+          <p class="card-text">{{ item.description }}</p>
+          <a
+            type="button"
+            class="btn-floating btn-small mx-2"
+            *ngFor="let media of socialMediaIcon"
+            ><i class="fab {{ media }}"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
