@@ -1,17 +1,26 @@
-<section class="hospitals-cards">
-  <div class="card-wrapper row">
-    <div class="no-padding col-lg-4 col-md-6 col-sm-6" *ngFor="let item of items">
-        <div class="hospitals-card">
-            <a href="" class="full-area">
-                <div class="hospitals-card-overlay">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 my-3" *ngFor="let item of items">
+      <section class="hospitals-cards">
+        <div class="card-wrapper">
+          <div class="hospitals-card">
+            <div class="full-area">
+              <div class="hospitals-card-overlay">
                 <div class="hospitals-card-texts">
-                    <p class="white-text font-size-1 full-width">{{item.name}}</p>
-                    <p class="white-text font-size-2 mt-10 full-width">{{item.desctrption}}</p>
+                  <p class="white-text font-size-1 full-width">
+                    {{ item.name }}
+                  </p>
+                  <p class="white-text font-size-2 mt-10 full-width">
+                    {{ item.desctrption }}
+                  </p>
+                  <button mat-raised-button color="accent">Read more</button>
                 </div>
-                </div>
-                <img [src]="item.imgSrc" class="hospitals-card-img">
-            </a>
+              </div>
+              <img [src]="item.imgSrc" class="hospitals-card-img" />
+            </div>
+          </div>
         </div>
+      </section>
     </div>
   </div>
-</section>
+</div>
