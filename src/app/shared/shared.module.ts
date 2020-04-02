@@ -7,15 +7,18 @@ import { SimpleCoverComponent } from "./components/simple-cover/simple-cover.com
 import { CommonModule } from "@angular/common";
 import { PopularDestinationComponent } from "./components/popular-destination/popular-destination.component";
 import { DoctorsCardComponent } from './components/doctors-card/doctors-card.component';
+import { WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 
 @NgModule({
-  declarations: [SimpleCoverComponent, PopularDestinationComponent, DoctorsCardComponent],
+  declarations: [SimpleCoverComponent, PopularDestinationComponent, DoctorsCardComponent ],
   imports: [
     FormlyBootstrapModule,
     ReactiveFormsModule,
     MDBBootstrapModule.forRoot(),
     MaterialModule,
-    CommonModule
+    CommonModule,
+    WavesModule,
+    ButtonsModule,
   ],
   exports: [
     FormlyBootstrapModule,
