@@ -5,12 +5,24 @@
 <section id="contact" class="py-3">
   <div class="container">
     <div class="row">
-      <div class="text-center margin">
-        <h1>Stay in touch with us</h1>
-        <p>
-          Share your feedback with us on the form below
-        </p>
+      <div class="col-lg-8 my-5">
+        <img
+          class="img-fluid image-svg"
+          src="./../../../../assets/svg/free-quote.png"
+        />
       </div>
+      <div class="col-lg-4 my-auto">
+        <div class="text-center margin">
+          <h2>Stay in touch with us</h2>
+          <p>
+            Share your feedback with us on the form below
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
       <div class="col-md-4">
         <div class="card p-4">
           <div class="card-body">
@@ -34,7 +46,9 @@
       <div class="col-md-8">
         <div class="card p-4">
           <div class="card-body">
-            <h3 class="text-center">Please fill out this form to contact us</h3>
+            <h3 class="text-center">
+              Please fill out this form to contact us
+            </h3>
             <hr />
             <div class="row">
               <mat-form-field class="half-width">
@@ -96,41 +110,14 @@
     <h1>Our Development Team</h1>
     <hr />
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3" *ngFor="let item of developmentTeam">
         <img
-          src="../../../../assets/contact-us/person4.jpg"
+          src="{{ item.imgSrc }}"
           alt=""
-          class="img-fluid rounded-circle mb-2"
+          class="img-person rounded-circle mb-2"
         />
-        <h4>Parham Ghasemloo</h4>
-        <small>Project Manager</small>
-      </div>
-      <div class="col-md-3">
-        <img
-          src="../../../../assets/contact-us/person2.jpg"
-          alt=""
-          class="img-fluid rounded-circle mb-2"
-        />
-        <h4>Alireza Ebrahimkhani</h4>
-        <small>Web Developer</small>
-      </div>
-      <div class="col-md-3">
-        <img
-          src="../../../../assets/contact-us/person3.jpg"
-          alt=""
-          class="img-fluid rounded-circle mb-2"
-        />
-        <h4>Alireza Yousefi Amiri</h4>
-        <small>Web Developer</small>
-      </div>
-      <div class="col-md-3">
-        <img
-          src="../../../../assets/contact-us/person1.jpg"
-          alt=""
-          class="img-fluid rounded-circle mb-2"
-        />
-        <h4>Steve Smith</h4>
-        <small>Web Developer</small>
+        <h4>{{ item.name }}</h4>
+        <small>{{ item.label }}</small>
       </div>
     </div>
   </div>
