@@ -31,9 +31,11 @@
   </mat-form-field>
   <mat-radio-group>
     <mat-label>Which method do you want to use ?</mat-label><br /><br />
-    <mat-radio-button *ngFor="let item of radioMethod" value="item">{{
-      item
-    }}</mat-radio-button>
+    <mat-radio-button
+      *ngFor="let item of radioMethod; let i = index"
+      value="{{ i }}"
+      >{{ item }}</mat-radio-button
+    >
   </mat-radio-group>
   <button class="btn btn-primary" type="submit">Submit</button>
 </form>
