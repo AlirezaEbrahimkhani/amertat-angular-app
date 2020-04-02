@@ -6,6 +6,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hospitals.component.scss']
 })
 export class HospitalsComponent implements OnInit {
+  hospitals: any[] = [
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest hospital in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+  ];
 
   constructor() { }
 
