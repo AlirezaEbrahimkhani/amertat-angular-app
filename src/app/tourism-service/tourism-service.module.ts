@@ -5,9 +5,14 @@ import { TourismServiceRoutingComponent } from "./components/tourism-service-rou
 import { TourismServiceRoutingModule } from "./tourism-service-routing.routes";
 import { TourismServiceComponent } from "./components/tourism-service/tourism-service.component";
 import { SharedModule } from "../shared/shared.module";
+import { AccommodationServiceComponent } from "./components/accommodation-service/accommodation-service.component";
 
 @NgModule({
-  declarations: [TourismServiceRoutingComponent, TourismServiceComponent],
+  declarations: [
+    TourismServiceRoutingComponent,
+    TourismServiceComponent,
+    AccommodationServiceComponent
+  ],
   imports: [CommonModule, TourismServiceRoutingModule, SharedModule]
 })
 export class TourismServiceModule {}

@@ -1,13 +1,29 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { MedicalServiceRoutingComponent } from './components/medical-service-routing/medical-service-routing.component';
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { MedicalServiceRoutingComponent } from "./components/medical-service-routing/medical-service-routing.component";
+import { HairTransplantComponent } from "./components/hair-transplant/hair-transplant.component";
+import { LiposuctionComponent } from "./components/liposuction/liposuction.component";
 
 const routes: Routes = [
   {
-    path : "",
-    component : MedicalServiceRoutingComponent,
-    children : []
+    path: "",
+    component: MedicalServiceRoutingComponent,
+    children: [
+      {
+        path: "hair-transplant",
+        component: HairTransplantComponent,
+        data: {
+          breadcrumb: "کاشت مو"
+        }
+      },
+      {
+        path: "liposuction",
+        component: LiposuctionComponent,
+        data: {
+          breadcrumb: "لیپوساکشن"
+        }
+      }
+    ]
   }
 ];
 
@@ -15,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MedicalServiceRoutingModule { }
+export class MedicalServiceRoutingModule {}
