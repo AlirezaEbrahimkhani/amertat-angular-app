@@ -10,35 +10,67 @@ export class HospitalsComponent implements OnInit {
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
     {
       name: "Tehran's Central",
       description: "The biggest hospital in Tehran",
-      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+      imgSrc: "../../../../assets/pictures/hospitals/esaias-tan-JeWyWRMH4rQ-unsplash.jpg",
     },
   ];
 
+  clinics: any[] = [
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+    {
+      name: "Tehran's Central",
+      description: "The biggest clinic in Tehran",
+      imgSrc: "../../../../assets/pictures/hospitals/adhy-savala-zbpgmGe27p8-unsplash.jpg",
+    },
+  ];
   constructor() { }
 
   ngOnInit() {
