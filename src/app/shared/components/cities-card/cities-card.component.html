@@ -1,1 +1,23 @@
-<p>cities-card works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6" *ngFor="let item of citiesCardInfo">
+      <div
+        class="card card-image my-5"
+        [ngStyle]="{ 'background-image': 'url(' + item.imgSrc + ')' }"
+      >
+        <div
+          class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4"
+        >
+          <div>
+            <h5 class="pink-text"><i class="fas fa-city"></i> Information</h5>
+            <h3 class="card-title pt-2">
+              <strong>{{ item.cityName }}</strong>
+            </h3>
+            <p>{{ item.cityDetail }}</p>
+            <button mat-raised-button color="primary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
