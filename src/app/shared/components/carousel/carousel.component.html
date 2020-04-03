@@ -1,44 +1,17 @@
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-    <mdb-carousel-item>
+    <mdb-carousel-item *ngFor="let item of items; let i = index">
       <div class="view w-100">
         <img
           class="d-block w-100"
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-          alt="First slide"
+          [src]="item.imgSrc"
+          alt="slide  {{i}}"
         />
         <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
+        <h3 class="h3-responsive">{{item.name}}</h3>
+        <p>{{item.description}}</p>
       </div>
     </mdb-carousel-item>
-    <mdb-carousel-item>
-      <div class="view w-100">
-        <img
-          class="d-block w-100"
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-          alt="Second slide"
-        />
-        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Secondary text</p>
-      </div>
-    </mdb-carousel-item>
-    <mdb-carousel-item>
-      <div class="view w-100">
-        <img
-          class="d-block w-100"
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-          alt="Third slide"
-        />
-        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Slight mask</h3>
-        <p>Third text</p>
-      </div>
-    </mdb-carousel-item>
-  </mdb-carousel>
+    
+</mdb-carousel>
