@@ -7,7 +7,6 @@ import { Component, OnInit, Input, Output } from "@angular/core";
 })
 export class FilterPartComponent implements OnInit {
   @Input() part: any;
-  @Input() color: any;
   constructor() {}
 
   ngOnInit() {}

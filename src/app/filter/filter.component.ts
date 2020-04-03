@@ -35,7 +35,8 @@ export class FilterComponent implements OnInit {
       city: "Tehran",
       hotel: "Hotel",
       price: "10000$",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 2,
@@ -44,7 +45,8 @@ export class FilterComponent implements OnInit {
       city: "Zanjan",
       hotel: "Hotel",
       price: "10000$",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 3,
@@ -53,7 +55,8 @@ export class FilterComponent implements OnInit {
       city: "Tehran",
       hotel: "Hotel",
       price: "10000$",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 5,
@@ -62,7 +65,8 @@ export class FilterComponent implements OnInit {
       city: "Zanjan",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 6,
@@ -71,88 +75,48 @@ export class FilterComponent implements OnInit {
       city: "Zanjan",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 7,
       name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
+      type: "Hospital",
+      city: "Mashhad",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 8,
       name: "Hello",
       type: "Hotel",
-      city: "Zanjan",
+      city: "Mashhad",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 9,
       name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
+      type: "Hospital",
+      city: "Tabriz",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     },
     {
       id: 10,
       name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
+      type: "Hospital",
+      city: "Tabriz",
       hotel: "Hotel",
       price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
-    },
-    {
-      id: 11,
-      name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
-      hotel: "Hotel",
-      price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
-    },
-    {
-      id: 12,
-      name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
-      hotel: "Hotel",
-      price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
-    },
-    {
-      id: 14,
-      name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
-      hotel: "Hotel",
-      price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
-    },
-    {
-      id: 16,
-      name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
-      hotel: "Hotel",
-      price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
-    },
-    {
-      id: 15,
-      name: "Hello",
-      type: "Hotel",
-      city: "Zanjan",
-      hotel: "Hotel",
-      price: "10000$",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
+      text:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui ducimus incidunt nulla, similique modi consectetur vel pariatur excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et nihil veniam velit perferendis exercitationem ullam nobis inventore eos quis incidunt ut quae, omnis modi sit itaque vitae delectus commodi."
     }
   ];
   @Input() fullCities: Array<any> = ["Tehran", "Zanjan", "Mashhad", "Tabriz"];
@@ -178,13 +142,5 @@ export class FilterComponent implements OnInit {
           this.parts.push(element);
       });
     }
-  }
-
-  getColor(id: number) {
-    console.log(id);
-    console.log(this.colors[id]);
-
-    if (id >= this.colors.length) return this.colors[id % this.colors.length];
-    else return this.colors[id];
   }
 }

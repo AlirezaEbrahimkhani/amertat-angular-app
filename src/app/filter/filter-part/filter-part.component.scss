@@ -1,143 +1,156 @@
 .filter .filter-gallery {
-    position: relative;
+  position: relative;
 }
 
 .animated.faster {
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
 .zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
 
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .mb-1,
 .my-1 {
-    margin-bottom: .25rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .mt-1,
 .my-1 {
-    margin-top: .25rem !important;
+  margin-top: 0.25rem !important;
 }
 
 .filter .item-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .image-fluid {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-
 .filter .item-content img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .img-fluid,
 .modal-dialog.cascading-modal.modal-avatar .modal-header,
 .video-fluid {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 img {
-    vertical-align: middle;
-    border-style: none;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .indigo {
-    background-color: #3f51b5 !important;
+  background-color: #3f51b5 !important;
 }
 
 .card {
-    font-weight: 400;
-    border: 0;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: .25rem;
-    margin-bottom: 20px;
+  font-weight: 400;
+  border: 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
 }
 
-
 .card-body {
-   padding: 0.75rem 1.5rem !important;
-    border-radius: 0 !important;
-    flex: 1 1 auto;
-    min-height: 1px;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0 !important;
+  flex: 1 1 auto;
+  min-height: 1px;
 }
 
 .justify-content-center {
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .d-flex {
-    display: -ms-flexbox !important;
-    display: flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .card .card-circle {
-    width: 7.5rem;
-    height: 7.5rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 50%;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
 }
 
 .align-items-center {
-    -ms-flex-align: center !important;
-    align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
-.card .card-circle .fas, .card .card-circle .fab, .card .card-circle .far {
-    font-size: 4rem;
+.card .card-circle .fas,
+.card .card-circle .fab,
+.card .card-circle .far {
+  font-size: 4rem;
 }
-.fa, .fas {
-    font-weight: 900;
+.fa,
+.fas {
+  font-weight: 900;
 }
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free";
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
 }
-.fa, .fab, .fad, .fal, .far, .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
 
 .font-weight-bold {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
-.red{
-    background-color: #ff3547 ;
+.red {
+  background-color: #ff3547;
+}
+
+.bg-color {
+  background-color: rgb(43, 43, 179);
 }

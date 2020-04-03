@@ -1,5 +1,3 @@
-
-
 <div class="container my-40">
   <div class="row">
     <section id="basic-example" class="mx-1 full-width">
@@ -9,7 +7,7 @@
 
       <section>
         <div class="filter filter-basic">
-          <div class="filter-nav row button-grp">
+          <div class="filter-nav row button-grp center-button">
             <button
               mdbBtn
               type="button"
@@ -43,8 +41,11 @@
 
           <div class="filter-gallery">
             <div class="row my-40 scroll-y">
-              <div class="col-lg-3 col-md-4 mb-md-0 mb-4" *ngFor="let part of parts">
-                <app-filter-part [part]="part" [color]="getColor(part.id)"></app-filter-part>
+              <div
+                class="col-lg-4 col-md-6 mb-md-0 mb-4"
+                *ngFor="let part of parts"
+              >
+                <app-filter-part [part]="part"></app-filter-part>
               </div>
             </div>
           </div>
