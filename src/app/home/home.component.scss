@@ -1,3 +1,11 @@
+* {
+  overflow-x: hidden;
+}
+
 .img-header {
-  max-height: 400px;
+  max-height: 800px;
+}
+
+.carousel {
+  z-index: 0;
 }
