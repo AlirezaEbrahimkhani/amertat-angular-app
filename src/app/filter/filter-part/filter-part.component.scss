@@ -83,16 +83,15 @@ img {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: .25rem;
+    margin-bottom: 20px;
 }
 
 
 .card-body {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+   padding: 0.75rem 1.5rem !important;
     border-radius: 0 !important;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem;
 }
 
 .justify-content-center {
@@ -137,4 +136,8 @@ img {
 
 .font-weight-bold {
     font-weight: 700 !important;
+}
+
+.red{
+    background-color: #ff3547 ;
 }
