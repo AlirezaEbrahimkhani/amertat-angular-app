@@ -2,10 +2,24 @@
   overflow-x: hidden;
 }
 
-.img-header {
-  max-height: 800px;
+section,
+html {
+  height: 88%;
+  overflow-y: hidden;
 }
 
-.carousel {
-  z-index: 0;
+.bg {
+  background-image: url("./../../assets/home/index_hero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.margin-top {
+  margin-top: 300px;
+}
+
+.center-button {
+  margin-left: 41%;
 }
