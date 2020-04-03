@@ -9,8 +9,8 @@ import { FormGroup } from "@angular/forms";
 })
 export class DoctorComponent implements OnInit {
   @Input() doctor: any = {
-    imgSrc: "../../../../../assets/contact-us/person1.jpg",
-    name: "Alireza Yoosefi",
+    imgSrc: "./../../../../../assets/information/doctors/doc_8.jpg",
+    name: "Dr john smith",
     speciality: "Physyology",
     phone: "02433224567",
     address: "Zanjan, some avn, som num",
