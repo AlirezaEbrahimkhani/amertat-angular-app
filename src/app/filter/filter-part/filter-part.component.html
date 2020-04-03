@@ -1,9 +1,20 @@
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title title"><b>Type :</b> {{ part.type }}</h5>
-    <h5 class="card-title title"><b>City :</b> {{ part.city }}</h5>
-    <h5 class="card-title title"><b>Hotel :</b> {{ part.hotel }}</h5>
-    <h5 class="card-title title"><b>Price :</b> {{ part.price }}</h5>
-    <p class="card-text font-size-2">{{ part.text }}</p>
+<div [className]="color + ' card'">
+  <div class="card-body white-text">
+    <h2 class="font-weight-bold my-4 text-center">{{part.name}}</h2>
+<!-- 
+    <div class="d-flex justify-content-center">
+      <div
+        class="card-circle d-flex justify-content-center align-items-center"
+      >
+        <i class="fas fa-users"></i>
+      </div>
+    </div> -->
+    <h5 class="mb-2 full-width text-center"><b>city:</b> {{part.city}}</h5>
+    <h5 class="mb-2 full-width text-center"><b>type:</b> {{part.city}}</h5>
+    <h5 class="mb-2 full-width text-center"><b>hotel:</b> {{part.hotel}}</h5>
+    <h5 class="mb-2 full-width text-center"><b>{{part.price}}$</b></h5>
+    <h6 class="mt-4 full-width text-justify">
+      {{part.text}}
+    </h6>
   </div>
 </div>
