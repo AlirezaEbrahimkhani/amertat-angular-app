@@ -1,1 +1,157 @@
-<app-filter></app-filter>
+<section>
+  <div class="bg">
+    <div class="row">
+      <div class="col-lg-5 mx-5 margin-top d-none d-sm-block">
+        <h2 class="text-center">
+          Amertat Medical Tourism Is The Place For Treatment
+        </h2>
+        <div class="container">
+          <p class="text-center mt-2 mx-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            dolor consequatur officia quod voluptates consectetur. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Expedita sequi
+            temporibus unde qui nemo cum.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus dolor consequatur officia quod voluptates
+            consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Expedita sequi temporibus unde qui nemo cum.
+          </p>
+        </div>
+        <button
+          class="center-button"
+          mat-raised-button
+          color="accent"
+          (click)="changeRoute()"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="text-center my-5">
+  <h1 class="font-size-1">
+    <strong>-- Welcome to Amertat Medical Tourism --</strong>
+  </h1>
+</div>
+<section class="mx-5">
+  <div class="my-5">
+    <div class="row">
+      <div class="col-lg-8 my-5">
+        <img class="img-fluid" src="./../../assets/svg/home-page.svg" />
+      </div>
+      <div class="col-lg-4 my-auto">
+        <div class="text-center">
+          <h3>About Amertat Medical Tourism</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui
+            ducimus incidunt nulla, similique modi consectetur vel pariatur
+            excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa
+            perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Vero et nihil veniam velit
+            perferendis exercitationem ullam nobis inventore eos quis incidunt
+            ut quae, omnis modi sit itaque vitae delectus commodi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <div class="text-center">
+    <h1>Popular Procedures</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+      distinctio dolorem quas fugit excepturi, laudantium delectus quaerat neque
+      magnam
+    </p>
+    <div class="row mt-5">
+      <div
+        class="col-lg-4 col-md-6"
+        *ngFor="let item of blogPostNumber; let i = index"
+        (click)="onClickCard()"
+      >
+        <div class="card card-cascade narrower my-3">
+          <div class="view view-cascade overlay">
+            <img
+              class="card-img-top"
+              src="../../../../assets/Blog/blog{{ i + 1 }}.jpg"
+              alt="Card image cap"
+            />
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <div class="card-body card-body-cascade">
+            <p class="card-text">
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam
+              corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+            </p>
+            <button mat-raised-button color="primary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="my-5">
+  <div class="my-5">
+    <div class="row">
+      <div class="col-lg-6 my-auto">
+        <div class="text-center">
+          <h3>Why Iran ?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui
+            ducimus incidunt nulla, similique modi consectetur vel pariatur
+            excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa
+            perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Vero et nihil veniam velit
+            perferendis exercitationem ullam nobis inventore eos quis incidunt
+            ut quae, omnis modi sit itaque vitae delectus commodi.Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Odit qui ducimus
+            incidunt nulla, similique modi consectetur vel pariatur excepturi?
+            Deserunt fugiat voluptates ullam architecto laborum culpa
+            perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Vero et nihil veniam velit
+            perferendis exercitationem ullam nobis inventore eos quis incidunt
+            ut quae, omnis modi sit itaque vitae delectus commodi.dolor sit amet
+            consectetur adipisicing elit. Odit qui ducimus incidunt nulla,
+            similique modi consectetur vel pariatur excepturi? Deserunt fugiat
+            voluptates ullam architecto laborum culpa perspiciatis, veritatis
+            consequatur iure. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Vero et nihil veniam velit perferendis
+            exercitationem ullam nobis inventore eos quis incidunt ut quae,
+            omnis modi sit itaque vitae delectus commodi.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 my-5">
+        <img class="img-fluid" src="./../../assets/svg/why-iran.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+<app-popular-destination></app-popular-destination>
+<div class="mx-5">
+  <div class="my-5 mx-5">
+    <div class="row">
+      <div class="col-lg-8 my-5">
+        <img class="img-fluid" src="./../../assets/svg/amertat-team.svg" />
+      </div>
+      <div class="col-lg-4 my-auto">
+        <div class="text-center">
+          <h3>Why we should use <strong>Amertat</strong> ?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit qui
+            ducimus incidunt nulla, similique modi consectetur vel pariatur
+            excepturi? Deserunt fugiat voluptates ullam architecto laborum culpa
+            perspiciatis, veritatis consequatur iure. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Vero et nihil veniam velit
+            perferendis exercitationem ullam nobis inventore eos quis incidunt
+            ut quae, omnis modi sit itaque vitae delectus commodi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

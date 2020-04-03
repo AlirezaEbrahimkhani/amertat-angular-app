@@ -1,0 +1,25 @@
+* {
+  overflow-x: hidden;
+}
+
+section,
+html {
+  height: 88%;
+  overflow-y: hidden;
+}
+
+.bg {
+  background-image: url("./../../assets/home/index_hero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.margin-top {
+  margin-top: 300px;
+}
+
+.center-button {
+  margin-left: 41%;
+}
