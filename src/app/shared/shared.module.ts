@@ -9,8 +9,10 @@ import { PopularDestinationComponent } from "./components/popular-destination/po
 import { DoctorsCardComponent } from "./components/doctors-card/doctors-card.component";
 import { WavesModule, ButtonsModule } from "angular-bootstrap-md";
 import { ClinicsCardComponent } from "./components/clinics-card/clinics-card.component";
-import { HospitalsCardComponent } from './components/hospitals-card/hospitals-card.component';
+import { HospitalsCardComponent } from "./components/hospitals-card/hospitals-card.component";
 import { CitiesCardComponent } from "./components/cities-card/cities-card.component";
+import { CarouselComponent } from "./components/carousel/carousel.component";
+import { CarouselModule } from "angular-bootstrap-md";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { CitiesCardComponent } from "./components/cities-card/cities-card.compon
     DoctorsCardComponent,
     ClinicsCardComponent,
     HospitalsCardComponent,
-    CitiesCardComponent
+    CitiesCardComponent,
+    CarouselComponent,
   ],
   imports: [
     FormlyBootstrapModule,
@@ -28,7 +31,8 @@ import { CitiesCardComponent } from "./components/cities-card/cities-card.compon
     MaterialModule,
     CommonModule,
     WavesModule,
-    ButtonsModule
+    ButtonsModule,
+    CarouselModule,
   ],
   exports: [
     FormlyBootstrapModule,
@@ -40,7 +44,8 @@ import { CitiesCardComponent } from "./components/cities-card/cities-card.compon
     DoctorsCardComponent,
     ClinicsCardComponent,
     HospitalsCardComponent,
-    CitiesCardComponent
-  ]
+    CitiesCardComponent,
+    CarouselComponent,
+  ],
 })
 export class SharedModule {}

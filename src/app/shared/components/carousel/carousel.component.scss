@@ -1,0 +1,13 @@
+.carousel-image {
+  height: 550px;
+}
+
+.color-p {
+  color: white;
+}
+
+@media only screen and (max-width: 520px) {
+  .carousel-image {
+    height: 350px;
+  }
+}

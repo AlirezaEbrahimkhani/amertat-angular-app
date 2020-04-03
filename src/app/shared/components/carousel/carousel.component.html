@@ -1,0 +1,15 @@
+<div class="text-center my-5">
+  <h2>{{ title }}</h2>
+</div>
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item *ngFor="let item of items; let i = index">
+    <div class="view w-100">
+      <img class="carousel-image d-block w-100" [src]="item.imgSrc" alt="slide  {{ i }}" />
+      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">{{ item.name }}</h3>
+      <p class="color-p">{{ item.description }}</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
