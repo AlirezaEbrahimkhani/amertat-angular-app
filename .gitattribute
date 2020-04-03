@@ -1,2 +1,2 @@
-## Language
-* linguist-language=TypeScript
+# Set language
+*.js linguist-language=TypeScript
