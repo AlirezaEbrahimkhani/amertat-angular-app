@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
+  @Input() title: string = "Carousel";
   @Input() items : any[] = [
     {
       name: "Light mask",

@@ -1,4 +1,7 @@
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <div class="text-center my-5">
+    <h2>{{title}}</h2>
+  </div>
     <mdb-carousel-item *ngFor="let item of items; let i = index">
       <div class="view w-100">
         <img
