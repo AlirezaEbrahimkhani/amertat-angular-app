@@ -54,8 +54,7 @@ const routes: Routes = [
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
-    SharedModule,
-    FilterModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
