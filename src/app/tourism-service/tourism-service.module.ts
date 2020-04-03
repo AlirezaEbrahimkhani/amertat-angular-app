@@ -6,6 +6,7 @@ import { TourismServiceRoutingModule } from "./tourism-service-routing.routes";
 import { TourismServiceComponent } from "./components/tourism-service/tourism-service.component";
 import { SharedModule } from "../shared/shared.module";
 import { AccommodationServiceComponent } from "./components/accommodation-service/accommodation-service.component";
+import { FilterModule } from '../filter/filter.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { AccommodationServiceComponent } from "./components/accommodation-servic
     TourismServiceComponent,
     AccommodationServiceComponent
   ],
-  imports: [CommonModule, TourismServiceRoutingModule, SharedModule]
+  imports: [CommonModule, TourismServiceRoutingModule, SharedModule , FilterModule]
 })
 export class TourismServiceModule {}
