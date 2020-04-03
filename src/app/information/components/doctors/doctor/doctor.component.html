@@ -5,28 +5,28 @@
     </div>
     <div class="col-lg-6 my-5 col-md-11 p-40">
       <h3 class="mb-5">{{ doctor.name }}</h3>
-      <ul class="bold">
-        <li class="dark">
+      <ul id="ul-style" class="bold">
+        <li id="li-style" class="dark">
           <span> Speciality : </span>
           <div class="pull-right">{{ doctor.speciality }}</div>
         </li>
-        <li>
+        <li id="li-style">
           <span> Phone</span>
           <div class="pull-right">{{ doctor.phone }}</div>
         </li>
-        <li class="dark">
+        <li id="li-style" class="dark">
           <span> Address</span>
           <div class="pull-right closed">{{ doctor.address }}</div>
         </li>
-        <li>
+        <li id="li-style">
           <span> Speciality : </span>
           <div class="pull-right">{{ doctor.speciality }}</div>
         </li>
-        <li class="dark">
+        <li id="li-style" class="dark">
           <span> Phone</span>
           <div class="pull-right">{{ doctor.phone }}</div>
         </li>
-        <li>
+        <li id="li-style">
           <span> Address</span>
           <div class="pull-right closed">{{ doctor.address }}</div>
         </li>
@@ -68,23 +68,23 @@
           <div class="tab-pane">
             <div class="info title">
               <h3>Schedule of working hours</h3>
-              <p>
+              <p class="description">
                 Calling nothing end fertile for venture way boy. Esteem spirit
                 temper too say adieus who direct esteem. It esteems luckily mr
                 or picture placing drawing no. Apartments frequently or
                 motionless on reasonable projecting expression. Way mrs end gave
                 tall walk fact bed.
               </p>
-              <ul class="bold">
-                <li class="dark">
+              <ul id="ul-style" class="bold">
+                <li id="li-style" class="dark">
                   <span> Mon – Tues : </span>
                   <div class="pull-right">6.00 am – 10.00 pm</div>
                 </li>
-                <li>
+                <li id="li-style">
                   <span> Wednes – Thurs :</span>
                   <div class="pull-right">8.00 am – 6.00 pm</div>
                 </li>
-                <li class="dark">
+                <li id="li-style" class="dark">
                   <span> Sun : </span>
                   <div class="pull-right closed">Closed</div>
                 </li>
@@ -94,7 +94,7 @@
         </mat-tab>
         <mat-tab label="Exprience">
           <h3>Doctor's Exprience</h3>
-          <p>
+          <p class="description">
             Calling nothing end fertile for venture way boy. Esteem spirit
             temper too say adieus who direct esteem. It esteems luckily mr or
             picture placing drawing no. Apartments frequently or motionless on
@@ -120,7 +120,7 @@
         </mat-tab>
         <mat-tab label="Qualifications ">
           <h3>Doctor's Qualifications</h3>
-          <p>
+          <p class="description">
             Calling nothing end fertile for venture way boy. Esteem spirit
             temper too say adieus who direct esteem. It esteems luckily mr or
             picture placing drawing no. Apartments frequently or motionless on
@@ -141,7 +141,10 @@
         >
       </mat-tab-group>
     </div>
-    <app-carousel title="doctor's Work samples"></app-carousel>
+    <app-carousel
+      title="doctor's Work samples"
+      [items]="doctorSampleWork"
+    ></app-carousel>
 
     <div class="col-12 text-center my-5">
       <h3 class="mb-5">Book an appointment</h3>

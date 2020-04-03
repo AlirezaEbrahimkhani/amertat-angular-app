@@ -7,23 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   @Input() title: string = "Carousel";
-  @Input() items : any[] = [
-    {
-      name: "Light mask",
-      description: "First text",
-      imgSrc: "./../../../../../assets/pictures/others/img (6).jpg",
-    },
-    {
-      name: "Strong mask",
-      description: "Secondary text",
-      imgSrc: "./../../../../../assets/pictures/others/img (9).jpg",
-    },
-    {
-      name: "Slight mask",
-      description: "Third text",
-      imgSrc: "./../../../../../assets/pictures/others/img (68).jpg",
-    },
-  ];
+  @Input() items : any[] = [];
   constructor() { }
 
   ngOnInit() {
