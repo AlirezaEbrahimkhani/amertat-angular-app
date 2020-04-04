@@ -1,4 +1,5 @@
-*.ts linguist-detectable=true
-*.css linguist-detectable=false
-*.html linguist-detectable=false
-*.json linguist-detectable=false
+# Set language
+*.js linguist-language=TypeScript
+
+# Normalize line endings for all text files.
+* text=auto
