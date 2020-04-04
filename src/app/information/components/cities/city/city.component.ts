@@ -1,16 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-city',
-  templateUrl: './city.component.html',
-  styleUrls: ['./city.component.scss']
+  selector: "app-city",
+  templateUrl: "./city.component.html",
+  styleUrls: ["./city.component.scss"],
 })
 export class CityComponent implements OnInit {
-
-  @Input() city: any = {
+  city: any = {
     name: "Zanjan",
-    mainImsSrc: "../../../../../assets/tourism-service/city4.jpg",
-    carouselItems : [
+    mainImsSrc: "./../../../../../assets/tourism-service/city4.jpg",
+    carouselItems: [
       {
         name: "Light mask",
         description: "First text",
@@ -27,11 +26,32 @@ export class CityComponent implements OnInit {
         imgSrc: "./../../../../../assets/pictures/others/img (68).jpg",
       },
     ],
-  }
+  };
 
-  constructor() { }
+  services: any[] = [
+    {
+      title: "tourism Service One",
+      description:
+        "Zanjan, at the southwest of the Asian continent, is a city blessedwith an incredible historical background, culture, and peace of mind.While you are visiting Iran for fertility, eye surgery, cosmetic surgery, or any other affordable medical treatment, why not take advantage of all that Shiraz has to offer?",
+    },
+    {
+      title: "tourism Service Two",
+      description:
+        "Zanjan, at the southwest of the Asian continent, is a city blessedwith an incredible historical background, culture, and peace of mind.While you are visiting Iran for fertility, eye surgery, cosmetic surgery, or any other affordable medical treatment, why not take advantage of all that Shiraz has to offer?",
+    },
+    {
+      title: "tourism Service Three",
+      description:
+        "Zanjan, at the southwest of the Asian continent, is a city blessedwith an incredible historical background, culture, and peace of mind.While you are visiting Iran for fertility, eye surgery, cosmetic surgery, or any other affordable medical treatment, why not take advantage of all that Shiraz has to offer?",
+    },
+    {
+      title: "tourism Service Four",
+      description:
+        "Zanjan, at the southwest of the Asian continent, is a city blessedwith an incredible historical background, culture, and peace of mind.While you are visiting Iran for fertility, eye surgery, cosmetic surgery, or any other affordable medical treatment, why not take advantage of all that Shiraz has to offer?",
+    },
+  ];
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }
