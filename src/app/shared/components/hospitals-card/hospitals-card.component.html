@@ -1,6 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-md-6 my-3" *ngFor="let item of items">
+    <div
+      class="col-lg-4 col-md-6 my-3"
+      *ngFor="let item of items"
+      (click)="onChangeRoute()"
+    >
       <section class="hospitals-cards">
         <div class="card-wrapper">
           <div class="hospitals-card">
