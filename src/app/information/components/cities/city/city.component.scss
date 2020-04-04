@@ -1,0 +1,66 @@
+.simple-cover {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-shadow: inset 0 -1px 20px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  
+  .simple-cover-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(31, 63, 120, 0.4);
+    z-index: 10;
+    opacity: 0.9;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 10px rgba(0, 0, 0, 0.28),
+      1px -1px 10px rgba(0, 0, 0, 0.28), -1px 1px 10px rgba(0, 0, 0, 0.28),
+      1px 1px 10px rgba(0, 0, 0, 0.28);
+  }
+
+  .pt-150{
+      padding-top: 150px;
+  }
+  .pb-150{
+      padding-bottom: 150px;
+  }
+  
+  .spacing-6{
+      letter-spacing: 6px;
+  }
+
+.text-shadow{
+    text-shadow: -1px -1px 10px rgba(0, 0, 0, 0.28),
+      1px -1px 10px rgba(0, 0, 0, 0.28), -1px 1px 10px rgba(0, 0, 0, 0.28),
+      1px 1px 10px rgba(0, 0, 0, 0.28);
+}
+
+.py-6{
+    padding: 6rem 0;
+}
+.my-3{
+    margin: 5rem 0;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.d-right{
+    direction: rtl;
+}
+
+
+
+  @media only screen and (max-width: 479px) {
+    .big-font-size {
+      font-size: 33px;
+      letter-spacing: 2px;
+    }
+  }
+  

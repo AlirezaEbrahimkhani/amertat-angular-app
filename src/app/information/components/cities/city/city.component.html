@@ -1,1 +1,121 @@
-<p>city works!</p>
+<div
+  class="simple-cover"
+  [ngStyle]="{
+    'background-image': 'url('+ city.mainImgSrc +')'
+  }"
+>
+  <h4 class="simple-cover-text pt-150 spacing-6">
+    If travel is most rewarding when it surprises, then
+  </h4>
+  <h2 class="big-font-size simple-cover-text">{{city.name}}</h2>
+  <h6 class="simple-cover-text pb-150">
+    <b>
+      Might just be the most rewarding
+      <br />
+      Destination on Earth
+    </b>
+  </h6>
+</div>
+
+<div class="container">
+  <div class="row py-6">
+    <div class="row px-5">
+      <h1 class="col-lg-2">
+        <b
+          >WHY <br />
+          {{city.name}}</b
+        >
+      </h1>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 justify">
+        <p>
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4 justify">
+        <p>
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 my-5">
+      <app-carousel
+        [title]="'Some places in ' + city.name"
+        [items]="city.carouselItems"
+      ></app-carousel>
+    </div>
+
+    <div class="row col-12 px-5">
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+      <div class="col-lg-6 row px-5 py-2">
+        <div class="title font-size-1">Extra Services</div>
+        <p class="justify">
+          Shiraz, at the southwest of the Asian continent, is a city blessed
+          with an incredible historical background, culture, and peace of mind.
+          While you are visiting Iran for fertility, eye surgery, cosmetic
+          surgery, or any other affordable medical treatment, why not take
+          advantage of all that Shiraz has to offer?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
