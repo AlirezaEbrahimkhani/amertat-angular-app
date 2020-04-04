@@ -49,6 +49,66 @@ export class HospitalComponent implements OnInit {
     },
   ];
 
+  hospitalGallari: any[] = [
+    {
+      name: "Image One",
+      description: "First text",
+      imgSrc: "./../../../../../assets/information/hospital/sample1.jpg",
+    },
+    {
+      name: "Image Two",
+      description: "Secondary text",
+      imgSrc: "./../../../../../assets/information/hospital/sample2.jpg",
+    },
+    {
+      name: "Image Three",
+      description: "Third text",
+      imgSrc: "./../../../../../assets/information/hospital/sample3.jpg",
+    },
+  ];
+
+  services: any[] = [
+    {
+      header: "Emergency",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Infertility & Baby Delivery",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Cardiology",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Physiotherapy",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Orthopedics",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "General surgery",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Infectious Diseases Treatment",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+    {
+      header: "Psychiatry",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
+    },
+  ];
   constructor() {}
 
   ngOnInit() {}
