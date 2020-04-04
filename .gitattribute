@@ -1,2 +1,4 @@
-* linguist-vendored
-*.ts linguist-vendored=false
+*.ts linguist-detectable=true
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.json linguist-detectable=false
