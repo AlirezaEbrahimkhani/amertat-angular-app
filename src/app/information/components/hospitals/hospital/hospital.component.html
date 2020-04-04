@@ -1,1 +1,54 @@
-<p>hospital works!</p>
+<app-simple-cover
+  imgSrc="./../../../../../assets/information/hospital/hospital-header.jpeg"
+  title="More about hospital"
+></app-simple-cover>
+<h2 class="text-center my-5">Learn More About Bahman Hospital</h2>
+<div class="svg my-5">
+  <img
+    class="img-fluid"
+    src="./../../../../../assets/svg/hospital-info.svg"
+    alt="hospital-info"
+  />
+</div>
+<h2 class="text-center margin-top">More Detail About Bahman Hospital</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 my-3" *ngFor="let item of hospitalCards">
+      <div class="card gradient-card">
+        <div
+          class="card-image"
+          style="
+            background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);
+          "
+        >
+          <a href="#!">
+            <div class="text-white d-flex h-100 mask blue-gradient-rgba">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">{{ item.title }}</h3>
+                <p class="lead mb-0">
+                  {{ item.description }}
+                </p>
+              </div>
+              <div class="second-content align-self-center mx-3 text-center">
+                <i class="fas fa-{{ item.icon }} fa-3x"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="third-content mb-2 mt-4">
+          <p class="text-uppercase text-center text-muted">
+            {{ item.titleDetail }}
+          </p>
+          <h4 class="font-weight-bold float-right mr-2">{{ item.Number }}</h4>
+        </div>
+        <div class="card-body white">
+          <p class="text-muted">{{ item.progressBarDesc }}</p>
+          <h4 class="text-uppercase font-weight-bold my-4">
+            {{ item.detailTitle }}
+          </h4>
+          <p class="text-muted" align="justify">{{ item.detailDesc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
