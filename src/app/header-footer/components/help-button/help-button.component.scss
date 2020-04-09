@@ -1,0 +1,139 @@
+#help-btn{
+    position: fixed;
+    bottom: 3rem;
+    height: 8rem;
+    width: 8rem;
+    left: 4rem;
+    border-radius: 50%;
+    background-color: rgba(31, 63, 120, 0.9);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1010;
+}
+
+#help-btn #comment{
+    color: white;
+    font-size: 30px !important;
+    transition: 0.5s;
+    position: absolute;
+    top: 35%;
+    left: 31%;
+}
+
+#help-btn #remove{
+    color: rgba(31, 63, 120, 0.9);
+    transform: scale(0);
+    font-size: 30px !important;
+    transition: 0.5s;
+    position: absolute;
+    top: 35%;  
+    left: 31%;}
+
+.clicked{
+    background-color: rgb(240,240,240) !important;
+}
+
+.clicked #comment{
+    transform: scale(0);
+}
+
+.clicked #remove{
+    transform: scale(1) !important;
+}
+
+.open{
+    bottom: 12rem !important;
+    opacity: 1 !important;
+    z-index: 1010 !important;
+}
+
+#slide {
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+    bottom: -10rem;
+    left: 4rem;
+    opacity: 0;
+    border-radius: 10px;
+    background-color: rgb(240,240,240);
+    padding-bottom: 6px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+#slide p{
+    background-color:rgba(31, 63, 120, 0.9);
+    color:white;
+    padding: 15px;
+}
+
+.slide-btn{
+    text-decoration: none !important;
+    padding: 5px 0px !important;
+}
+
+.slide-btn div{
+    width: 100%;
+    padding: 7px 0px;
+    padding-left: 15%;
+}
+
+.slide-btn div span{
+    margin-right: 15px;
+    color: white;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+#whatsapp div span{
+    background-color:rgba(31, 120, 63, 0.9);
+}
+#whatsapp div{
+    color:rgba(31, 120, 63, 0.9);
+}
+
+#chat div span{
+    background-color:rgba(120, 63, 31, 0.9);
+}
+#chat div{
+    color:rgba(120, 63, 31, 0.9);
+}
+
+#email div span{
+    background-color:rgba(197, 161, 2, 0.9);
+}
+#email div{
+    color:rgba(197, 161, 2, 0.9);
+}
+
+@media only screen and (max-width : 600px){
+    #help-btn{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #help-btn #comment {
+        top: 26%;
+        left: 20%;
+        font-size: 28px !important;
+    }
+
+    #help-btn #remove{
+        top: 22%;
+        left: 20%;
+    }
+
+    #help-btn{
+        bottom: 2rem;
+        left: 2.5rem;
+    }
+
+    .open{
+        bottom: 8rem !important;
+    }
+}

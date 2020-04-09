@@ -11,6 +11,7 @@ import { GetStartedModalComponent } from './components/header/get-started-modal/
 import { GetFreeQouteModalComponent } from './components/header/get-free-qoute-modal/get-free-qoute-modal.component';
 import { NavbarModule, WavesModule, ButtonsModule, MdbIconComponent, IconsModule, DropdownModule } from 'angular-bootstrap-md'
 import { BrowserModule } from '@angular/platform-browser';
+import { HelpButtonComponent } from './components/help-button/help-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { BrowserModule } from '@angular/platform-browser';
     HeaderDialogComponent, 
     ContactUsModalComponent, 
     GetStartedModalComponent, 
-    GetFreeQouteModalComponent,
+    GetFreeQouteModalComponent, HelpButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -35,7 +36,8 @@ import { BrowserModule } from '@angular/platform-browser';
   exports : [
     HeaderComponent, 
     FooterComponent, 
-    NavbarComponent
+    NavbarComponent,
+    HelpButtonComponent,
   ],
   entryComponents : [
     HeaderDialogComponent,

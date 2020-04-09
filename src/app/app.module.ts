@@ -8,7 +8,6 @@ import { HeaderFooterModule } from "./header-footer/header-footer.module";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { SharedModule } from "./shared/shared.module";
-import { FilterModule } from "./filter/filter.module";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 
 const routes: Routes = [
