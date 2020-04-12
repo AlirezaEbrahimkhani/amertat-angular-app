@@ -1,9 +1,8 @@
 #help-btn{
     position: fixed;
-    bottom: 3rem;
-    height: 8rem;
-    width: 8rem;
-    left: 4rem;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 1.5rem;
     border-radius: 50%;
     background-color: rgba(31, 63, 120, 0.9);
     border: none;
@@ -14,25 +13,24 @@
     text-align: center;
     transition: 0.5s;
     z-index: 1010;
+    height: auto;
 }
 
 #help-btn #comment{
     color: white;
-    font-size: 30px !important;
+    font-size: 20px !important;
     transition: 0.5s;
-    position: absolute;
-    top: 35%;
-    left: 31%;
+    margin-bottom: -46px;
 }
 
 #help-btn #remove{
     color: rgba(31, 63, 120, 0.9);
     transform: scale(0);
-    font-size: 30px !important;
+    font-size: 20px !important;
     transition: 0.5s;
-    position: absolute;
-    top: 35%;  
-    left: 31%;}
+    margin-bottom: -5px;
+    margin-top: 4px
+}
 
 .clicked{
     background-color: rgb(240,240,240) !important;
@@ -47,7 +45,7 @@
 }
 
 .open{
-    bottom: 12rem !important;
+    bottom: 7.5rem !important;
     opacity: 1 !important;
     z-index: 1010 !important;
 }
@@ -56,14 +54,18 @@
     display: inline-block;
     overflow: hidden;
     position: fixed;
-    bottom: -10rem;
-    left: 4rem;
+    left: 1rem;
+    bottom: -6rem;
     opacity: 0;
     border-radius: 10px;
     background-color: rgb(240,240,240);
     padding-bottom: 6px;
     transition: 0.5s;
     z-index: -1;
+
+    mdb-icon{
+        margin-right: 3px;
+    }
 }
 
 #slide p{
@@ -109,31 +111,4 @@
 }
 #email div{
     color:rgba(197, 161, 2, 0.9);
-}
-
-@media only screen and (max-width : 600px){
-    #help-btn{
-        width: 5rem;
-        height: 5rem;
-    }
-
-    #help-btn #comment {
-        top: 26%;
-        left: 20%;
-        font-size: 28px !important;
-    }
-
-    #help-btn #remove{
-        top: 22%;
-        left: 20%;
-    }
-
-    #help-btn{
-        bottom: 2rem;
-        left: 2.5rem;
-    }
-
-    .open{
-        bottom: 8rem !important;
-    }
 }
