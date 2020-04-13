@@ -24,6 +24,29 @@ export class AboutUsComponent implements OnInit {
     "person4.jpg",
   ]
 
+  developmentTeam: any[] = [
+    {
+      imgSrc: "../../../../assets/contact-us/person4.jpg",
+      name: "parham ghasemloo",
+      label: "Project Manager"
+    },
+    {
+      imgSrc: "../../../../assets/contact-us/person2.jpg",
+      name: "Alireza Ebrahimkhani",
+      label: "Web Developer"
+    },
+    {
+      imgSrc: "../../../../assets/contact-us/person3.jpg",
+      name: "Alireza Yousefi Amiri",
+      label: "Web Developer"
+    },
+    {
+      imgSrc: "../../../../assets/contact-us/person1.jpg",
+      name: "Steve Smith",
+      label: "Web Developer"
+    }
+  ];
+
   constructor() {}
 
   ngOnInit() {}

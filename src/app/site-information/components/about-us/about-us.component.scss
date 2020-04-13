@@ -17,6 +17,11 @@
   background-color: rgb(39, 27, 149);
 }
 
+.img-person,
+.video-fluid {
+  height: 180px;
+}
+
 @media only screen and (max-width: 479px) {
   .display-5 {
     font-size: 32px;
