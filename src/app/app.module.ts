@@ -17,32 +17,32 @@ const routes: Routes = [
       {
         path: "medical-service",
         loadChildren:
-          "./medical-service/medical-service.module#MedicalServiceModule"
+          "./medical-service/medical-service.module#MedicalServiceModule",
       },
       {
         path: "information",
-        loadChildren: "./information/information.module#InformationModule"
+        loadChildren: "./information/information.module#InformationModule",
       },
       {
         path: "tourism-service",
         loadChildren:
-          "./tourism-service/tourism-service.module#TourismServiceModule"
+          "./tourism-service/tourism-service.module#TourismServiceModule",
       },
       {
         path: "site-information",
         loadChildren:
-          "./site-information/site-information.module#SiteInformationModule"
+          "./site-information/site-information.module#SiteInformationModule",
       },
       {
         path: "home",
-        component: HomeComponent
-      }
-    ]
+        component: HomeComponent,
+      },
+    ],
   },
   {
     path: "**",
-    redirectTo: "amertat/home"
-  }
+    redirectTo: "/amertat/home",
+  },
 ];
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -53,9 +53,9 @@ const routes: Routes = [
     MaterialModule,
     HeaderFooterModule,
     RouterModule.forRoot(routes),
-    SharedModule
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
