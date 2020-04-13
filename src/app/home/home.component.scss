@@ -16,10 +16,24 @@ html {
   background-size: cover;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .margin-top {
   margin-top: 300px;
 }
 
 .center-button {
   margin-left: 41%;
+}
+
+@media only screen and (max-width: 479px) {
+  .margin-top {
+    margin-top: 50px;
+  }
+
+  .center-text {
+    font-size: 29px;
+  }
 }
