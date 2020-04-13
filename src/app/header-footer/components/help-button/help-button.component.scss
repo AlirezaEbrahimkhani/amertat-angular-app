@@ -1,114 +1,124 @@
-#help-btn{
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    padding: 1.5rem;
-    border-radius: 50%;
-    background-color: rgba(31, 63, 120, 0.9);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    transition: 0.5s;
-    z-index: 1010;
-    height: auto;
+#help-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: rgba(31, 63, 120, 0.9);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1010;
+  height: auto;
 }
 
-#help-btn #comment{
-    color: white;
-    font-size: 20px !important;
-    transition: 0.5s;
-    margin-bottom: -46px;
+#help-btn #comment {
+  color: white;
+  font-size: 20px !important;
+  transition: 0.5s;
+  margin-bottom: -46px;
 }
 
-#help-btn #remove{
-    color: rgba(31, 63, 120, 0.9);
-    transform: scale(0);
-    font-size: 20px !important;
-    transition: 0.5s;
-    margin-bottom: -5px;
-    margin-top: 4px
+#help-btn #remove {
+  color: rgba(31, 63, 120, 0.9);
+  transform: scale(0);
+  font-size: 20px !important;
+  transition: 0.5s;
+  margin-bottom: -5px;
+  margin-top: 4px;
 }
 
-.clicked{
-    background-color: rgb(240,240,240) !important;
+.clicked {
+  background-color: rgb(240, 240, 240) !important;
 }
 
-.clicked #comment{
-    transform: scale(0);
+.clicked #comment {
+  transform: scale(0);
 }
 
-.clicked #remove{
-    transform: scale(1) !important;
+.clicked #remove {
+  transform: scale(1) !important;
 }
 
-.open{
-    bottom: 7.5rem !important;
-    opacity: 1 !important;
-    z-index: 1010 !important;
+.open {
+  bottom: 7.5rem !important;
+  opacity: 1 !important;
+  z-index: 1010 !important;
 }
 
 #slide {
-    display: inline-block;
-    overflow: hidden;
-    position: fixed;
-    left: 1rem;
-    bottom: -6rem;
-    opacity: 0;
-    border-radius: 10px;
-    background-color: rgb(240,240,240);
-    padding-bottom: 6px;
-    transition: 0.5s;
-    z-index: -1;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  left: 1rem;
+  bottom: -6rem;
+  opacity: 0;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 6px;
+  transition: 0.5s;
+  z-index: -1;
 
-    mdb-icon{
-        margin-right: 3px;
-    }
-}
-
-#slide p{
-    background-color:rgba(31, 63, 120, 0.9);
-    color:white;
-    padding: 15px;
+  mdb-icon {
+    margin-right: 3px;
+  }
 }
 
-.slide-btn{
-    text-decoration: none !important;
-    padding: 5px 0px !important;
+#slide p {
+  background-color: rgba(31, 63, 120, 0.9);
+  color: white;
+  padding: 15px;
 }
 
-.slide-btn div{
-    width: 100%;
-    padding: 7px 0px;
-    padding-left: 15%;
+.slide-btn {
+  text-decoration: none !important;
+  padding: 5px 0px !important;
 }
 
-.slide-btn div span{
-    margin-right: 15px;
-    color: white;
-    padding: 5%;
-    border-radius: 50%;
+.slide-btn div {
+  width: 100%;
+  padding: 7px 0px;
+  padding-left: 15%;
 }
 
-#whatsapp div span{
-    background-color:rgba(31, 120, 63, 0.9);
-}
-#whatsapp div{
-    color:rgba(31, 120, 63, 0.9);
-}
-
-#chat div span{
-    background-color:rgba(120, 63, 31, 0.9);
-}
-#chat div{
-    color:rgba(120, 63, 31, 0.9);
+.slide-btn div span {
+  margin-right: 15px;
+  color: white;
+  padding: 5%;
+  border-radius: 50%;
 }
 
-#email div span{
-    background-color:rgba(197, 161, 2, 0.9);
+#whatsapp div span {
+  background-color: rgba(31, 120, 63, 0.9);
 }
-#email div{
-    color:rgba(197, 161, 2, 0.9);
+#whatsapp div {
+  color: rgba(31, 120, 63, 0.9);
+}
+
+#chat div span {
+  background-color: rgba(120, 63, 31, 0.9);
+}
+#chat div {
+  color: rgba(120, 63, 31, 0.9);
+}
+
+#email div span {
+  background-color: rgba(197, 161, 2, 0.9);
+}
+#email div {
+  color: rgba(197, 161, 2, 0.9);
+}
+
+@media only screen and (max-width: 479px) {
+  #help-btn #comment {
+    font-size: 15px !important;
+  }
+
+  #help-btn {
+    padding: 1rem;
+  }
 }
