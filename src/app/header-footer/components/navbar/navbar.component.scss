@@ -17,15 +17,22 @@
   color: #4285f4 !important;
 }
 
+.dropdown-item:hover {
+  color: white;
+  background-color: #4285f4;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
 @media only screen and (min-width: 991px) and (max-width: 1300px) {
   #navbar {
     top: 75px;
   }
-}
-
-.dropdown-item:hover {
-  color: white;
-  background-color: #4285f4;
 }
 
 @media only screen and (max-width: 999px) {
