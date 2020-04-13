@@ -5,16 +5,14 @@ import { SiteInformationRoutingModule } from "./site-information-routing.routes"
 import { SiteInformationRouringComponent } from "./components/site-information-rouring/site-information-rouring.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
 import { SharedModule } from "../shared/shared.module";
-import { ContactUsComponent } from "./components/contact-us/contact-us.component";
 import { BlogComponent } from "./components/blog/blog.component";
 
 @NgModule({
   declarations: [
     SiteInformationRouringComponent,
     AboutUsComponent,
-    ContactUsComponent,
-    BlogComponent
+    BlogComponent,
   ],
-  imports: [CommonModule, SiteInformationRoutingModule, SharedModule]
+  imports: [CommonModule, SiteInformationRoutingModule, SharedModule],
 })
 export class SiteInformationModule {}
