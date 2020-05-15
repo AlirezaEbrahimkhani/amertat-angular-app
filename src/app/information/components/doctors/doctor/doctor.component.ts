@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from "@angular/core";
 import { FormGroup } from "@angular/forms";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: "app-doctor",
@@ -36,9 +37,13 @@ export class DoctorComponent implements OnInit {
 
   form = new FormGroup({});
 
-  constructor() {}
+  constructor(private activeRoute: ActivatedRoute) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.activeRoute.queryParams.subscribe((element) => {
+      console.log(element); //اینجا اون آی دی رو میگیری میفرستی به سرویس
+    });
+  }
 
   onSubmit() {}
 }

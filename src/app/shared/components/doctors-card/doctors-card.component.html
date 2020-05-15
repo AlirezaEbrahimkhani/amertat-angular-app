@@ -14,7 +14,7 @@
           </h5>
           <h4 class="font-weight-bold card-title">{{ item.name }}</h4>
           <p class="card-text">{{ item.description }}</p>
-          <button mat-raised-button color="primary" (click)="changeToDoctor()">Read More</button>
+          <button mat-raised-button color="primary" (click)="changeToDoctor(item)">Read More</button>
           <div class="card-footer text-muted text-center mt-4">
             {{ item.degree }}
           </div>
