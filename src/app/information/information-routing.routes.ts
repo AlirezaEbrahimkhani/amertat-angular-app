@@ -39,7 +39,7 @@ const routes: Routes = [
         component: HospitalComponent
       },
       {
-        path: "doctors/doctor",
+        path: "doctors/doctor/:id",
         component: DoctorComponent
       },
       {
