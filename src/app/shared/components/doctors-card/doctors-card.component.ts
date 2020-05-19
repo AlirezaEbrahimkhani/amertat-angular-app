@@ -14,7 +14,6 @@ export class DoctorsCardComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    console.log(this.items);
   }
 
   changeToDoctor(item) {
