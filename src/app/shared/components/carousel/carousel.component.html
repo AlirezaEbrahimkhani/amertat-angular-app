@@ -2,14 +2,17 @@
   <h2>{{ title }}</h2>
 </div>
 <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-  <mdb-carousel-item *ngFor="let item of items; let i = index">
+  <mdb-carousel-item *ngFor="let item of items">
     <div class="view w-100">
-      <img class="carousel-image d-block w-100" [src]="item.imgSrc" alt="slide  {{ i }}" />
+      <img
+        class="carousel-image d-block w-100"
+        src="{{ item.baseUrl }}{{ item.image.url }}"
+      />
       <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
     </div>
     <div class="carousel-caption">
-      <h3 class="h3-responsive">{{ item.name }}</h3>
-      <p class="color-p">{{ item.description }}</p>
+      <h3 class="h3-responsive">{{ item.title }}</h3>
+      <p class="color-p">{{ item.desc }}</p>
     </div>
   </mdb-carousel-item>
 </mdb-carousel>
