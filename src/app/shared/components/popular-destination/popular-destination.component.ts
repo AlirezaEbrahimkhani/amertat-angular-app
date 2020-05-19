@@ -1,23 +1,21 @@
 import { Component, OnInit } from "@angular/core";
+import { SharedService } from "../../services/shared.service";
 
 @Component({
   selector: "app-popular-destination",
   templateUrl: "./popular-destination.component.html",
-  styleUrls: ["./popular-destination.component.scss"]
+  styleUrls: ["./popular-destination.component.scss"],
 })
 export class PopularDestinationComponent implements OnInit {
-  cardNumber: string[] = [
-    "One",
-    "Two",
-    "Three",
-    "Four",
-    "Five",
-    "Six",
-    "Seven",
-    "Eight"
-  ];
+  cardInfo: any[] = [];
 
-  constructor() {}
+  constructor(private sharedService: SharedService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.sharedService.getPopularDestination().subscribe((response: any[]) => {
+      response.forEach((element) => {
+        this.cardInfo.push(element);
+      });
+    });
+  }
 }
