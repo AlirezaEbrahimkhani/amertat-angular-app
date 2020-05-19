@@ -12,4 +12,8 @@ export class TourismService {
   getTourismServicePage() {
     return this.http.get(this.baseUrl + "about-tourism-page");
   }
+
+  getAccomodationPage() {
+    return this.http.get(this.baseUrl + "accomodation-page");
+  }
 }

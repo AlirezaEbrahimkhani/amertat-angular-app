@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TourismService } from '../../shared/service/tourism.service';
 
 @Component({
   selector: 'app-accommodation-service',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accommodation-service.component.scss']
 })
 export class AccommodationServiceComponent implements OnInit {
+  pageConfig: any = [];
 
-  constructor() { }
+  constructor(private tourismSrv: TourismService) {}
 
   ngOnInit() {
+    this.tourismSrv.getAccomodationPage().subscribe((response: any[]) => {
+      this.pageConfig = response[0];
+    });
   }
 
 }
