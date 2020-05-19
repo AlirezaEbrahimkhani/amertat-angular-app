@@ -37,5 +37,10 @@
       >{{ item }}</mat-radio-button
     >
   </mat-radio-group>
-  <button class="btn btn-primary" type="submit">Submit</button>
+  <div class="d-flex">
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-danger" type="button" (click)="onCancel()">
+      cancel
+    </button>
+  </div>
 </form>

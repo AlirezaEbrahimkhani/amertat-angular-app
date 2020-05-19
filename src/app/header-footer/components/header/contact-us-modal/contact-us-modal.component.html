@@ -31,5 +31,8 @@
     <mat-label>Address : </mat-label>
     <textarea matInput placeholder="Ex. 100 Main St"></textarea>
   </mat-form-field>
-  <button class="btn btn-primary" type="submit">Submit</button>
+  <div class="d-flex">
+    <button class="btn btn-danger" type="button" (click)="onCancel()">cancel</button>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
 </form>

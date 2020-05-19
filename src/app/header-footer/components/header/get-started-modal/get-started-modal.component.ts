@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { MatDialogRef } from "@angular/material";
 
 @Component({
-  selector: 'app-get-started-modal',
-  templateUrl: './get-started-modal.component.html',
-  styleUrls: ['./get-started-modal.component.scss']
+  selector: "app-get-started-modal",
+  templateUrl: "./get-started-modal.component.html",
+  styleUrls: ["./get-started-modal.component.scss"],
 })
 export class GetStartedModalComponent implements OnInit {
-
-  getStarted : string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+  getStarted: string =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam," +
     "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." +
     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
@@ -15,16 +16,18 @@ export class GetStartedModalComponent implements OnInit {
     "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." +
     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
-    "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."+
+    "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." +
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore" +
     "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" +
     "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." +
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore" +
-    "magna aliqua." 
-  constructor() { }
+    "magna aliqua.";
+  constructor(private dialogRef: MatDialogRef<GetStartedModalComponent>) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onCancel() {
+    this.dialogRef.close();
   }
-
 }
