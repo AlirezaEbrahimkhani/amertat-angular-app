@@ -1,7 +1,10 @@
 <div class="container my-40">
   <div class="row">
     <div class="col-lg-5 my-5">
-      <img class="img-fluid mat-elevation-z4" [src]="doctor.imgSrc" />
+      <img
+        class="img-fluid mat-elevation-z4"
+        src="{{ baseUrl }}{{ doctor.image.url }}"
+      />
     </div>
     <div class="col-lg-6 my-5 col-md-11 p-40">
       <h3 class="mb-5">{{ doctor.name }}</h3>
@@ -19,16 +22,12 @@
           <div class="pull-right closed">{{ doctor.address }}</div>
         </li>
         <li id="li-style">
-          <span> Speciality : </span>
-          <div class="pull-right">{{ doctor.speciality }}</div>
+          <span> Working Field : </span>
+          <div class="pull-right">{{ doctor.field }}</div>
         </li>
         <li id="li-style" class="dark">
-          <span> Phone</span>
-          <div class="pull-right">{{ doctor.phone }}</div>
-        </li>
-        <li id="li-style">
-          <span> Address</span>
-          <div class="pull-right closed">{{ doctor.address }}</div>
+          <span> Social :</span>
+          <div class="pull-right">{{ doctor.social }}</div>
         </li>
       </ul>
     </div>
@@ -69,24 +68,16 @@
             <div class="info title">
               <h3>Schedule of working hours</h3>
               <p class="description">
-                Calling nothing end fertile for venture way boy. Esteem spirit
-                temper too say adieus who direct esteem. It esteems luckily mr
-                or picture placing drawing no. Apartments frequently or
-                motionless on reasonable projecting expression. Way mrs end gave
-                tall walk fact bed.
+                {{ doctor.desc }}
               </p>
-              <ul id="ul-style" class="bold">
+              <ul
+                id="ul-style"
+                class="bold"
+                *ngFor="let item of doctor.workDays"
+              >
                 <li id="li-style" class="dark">
-                  <span> Mon – Tues : </span>
-                  <div class="pull-right">6.00 am – 10.00 pm</div>
-                </li>
-                <li id="li-style">
-                  <span> Wednes – Thurs :</span>
-                  <div class="pull-right">8.00 am – 6.00 pm</div>
-                </li>
-                <li id="li-style" class="dark">
-                  <span> Sun : </span>
-                  <div class="pull-right closed">Closed</div>
+                  <span> {{ item.days.splite(",").join(",") }} </span>
+                  <div class="pull-right">{{ item.from }} - {{ item.to }}</div>
                 </li>
               </ul>
             </div>
@@ -95,48 +86,13 @@
         <mat-tab label="Exprience">
           <h3>Doctor's Exprience</h3>
           <p class="description">
-            Calling nothing end fertile for venture way boy. Esteem spirit
-            temper too say adieus who direct esteem. It esteems luckily mr or
-            picture placing drawing no. Apartments frequently or motionless on
-            reasonable projecting expression. Way mrs end gave tall walk fact
-            bed. Placing assured be if removed it besides on. Far shed each high
-            read are men over day. Afraid we praise lively he suffer family
-            estate is. Ample order up in of in ready. Timed blind had now those
-            ought set often which. Or snug dull he show more true wish. No at
-            many deny away miss evil. On in so indeed spirit an mother. Amounted
-            old strictly but marianne admitted. People former is remove remain
-            we praiseCalling nothing end fertile for venture way boy. Esteem
-            spirit temper too say adieus who direct esteem. It esteems luckily
-            mr or picture placing drawing no. Apartments frequently or
-            motionless on reasonable projecting expression. Way mrs end gave
-            tall walk fact bed. Placing assured be if removed it besides on. Far
-            shed each high read are men over day. Afraid we praise lively he
-            suffer family estate is. Ample order up in of in ready. Timed blind
-            had now those ought set often which. Or snug dull he show more true
-            wish. No at many deny away miss evil. On in so indeed spirit an
-            mother. Amounted old strictly but marianne admitted. People former
-            is remove remain we praise
+            {{ doctor.exprience }}
           </p>
         </mat-tab>
         <mat-tab label="Qualifications ">
           <h3>Doctor's Qualifications</h3>
           <p class="description">
-            Calling nothing end fertile for venture way boy. Esteem spirit
-            temper too say adieus who direct esteem. It esteems luckily mr or
-            picture placing drawing no. Apartments frequently or motionless on
-            reasonable projecting expression. Way mrs end gave tall walk fact
-            bed. Placing assured be if removed it besides on. Far shed each high
-            read are men over day. Afraid we praise lively he suffer family
-            estate is. Ample order up in of in ready. Timed blind had now those
-            ought set often which. Or snug dull he show more true wish. No at
-            many deny away miss evil. On in so indeed spirit an mother. Amounted
-            old strictly but marianne admitted. People former is remove remain
-            we praiseread are men over day. Afraid we praise lively he suffer
-            family estate is. Ample order up in of in ready. Timed blind had now
-            those ought set often which. Or snug dull he show more true wish. No
-            at many deny away miss evil. On in so indeed spirit an mother.
-            Amounted old strictly but marianne admitted. People former is remove
-            remain we praise
+            {{ doctor.qualifications }}
           </p></mat-tab
         >
       </mat-tab-group>
@@ -144,7 +100,7 @@
     <div class="container">
       <app-carousel
         title="doctor's Work samples"
-        [items]="doctorSampleWork"
+        [items]="doctor.carousels"
       ></app-carousel>
     </div>
 

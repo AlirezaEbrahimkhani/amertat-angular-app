@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { ActivatedRoute } from "@angular/router";
+import { InformationService } from "src/app/information/shared/information.service";
 
 @Component({
   selector: "app-doctor",
@@ -9,39 +10,20 @@ import { ActivatedRoute } from "@angular/router";
   encapsulation: ViewEncapsulation.None,
 })
 export class DoctorComponent implements OnInit {
-  doctor: any = {
-    imgSrc: "./../../../../../assets/information/doctors/doc_8.jpg",
-    name: "Dr john smith",
-    speciality: "Physyology",
-    phone: "02433224567",
-    address: "Zanjan, some avn, som num",
-  };
-
-  doctorSampleWork: any[] = [
-    {
-      name: "Light mask",
-      description: "First text",
-      imgSrc: "./../../../../../assets/information/doctors/sample1.jpg",
-    },
-    {
-      name: "Strong mask",
-      description: "Secondary text",
-      imgSrc: "./../../../../../assets/information/doctors/sample2.jpg",
-    },
-    {
-      name: "Slight mask",
-      description: "Third text",
-      imgSrc: "./../../../../../assets/information/doctors/sample3.jpg",
-    },
-  ];
+  doctor: any = [];
+  baseUrl = "http://195.206.106.154:3000";
 
   form = new FormGroup({});
 
-  constructor(private activeRoute: ActivatedRoute) {}
+  constructor(
+    private activeRoute: ActivatedRoute,
+    private infoSrv: InformationService
+  ) {}
 
   ngOnInit() {
-    this.activeRoute.queryParams.subscribe((element) => {
-      console.log(element); //اینجا اون آی دی رو میگیری میفرستی به سرویس
+    let { id } = this.activeRoute.snapshot.params;
+    this.infoSrv.getDoctor(id).subscribe((response) => {
+      this.doctor = response;
     });
   }
 
