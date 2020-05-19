@@ -13,4 +13,8 @@ export class InformationService {
   getDoctorsPage(){
     return this.http.get(this.baseUrl + "doctors-page");
   }
+
+  getDoctors(){
+    return this.http.get(this.baseUrl + "doctor");
+  }
 }

@@ -3,7 +3,11 @@
     <div class="col-lg-4 col-md-6" *ngFor="let item of items">
       <div class="card card-cascade wider my-5">
         <div class="view view-cascade overlay">
-          <img class="card-img-top height" [src]="item.imgSrc" alt="Card image cap" />
+          <img
+            class="card-img-top height"
+            src="{{ baseUrl }}{{ item.image.url }}"
+            alt="Card image cap"
+          />
           <a href="#!">
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -13,8 +17,13 @@
             <i class="fas fa-user-md"></i> {{ item.proficiency }}
           </h5>
           <h4 class="font-weight-bold card-title">{{ item.name }}</h4>
-          <p class="card-text">{{ item.description }}</p>
-          <button mat-raised-button color="primary" (click)="changeToDoctor(item)">Read More</button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="changeToDoctor(item)"
+          >
+            Read More
+          </button>
           <div class="card-footer text-muted text-center mt-4">
             {{ item.degree }}
           </div>

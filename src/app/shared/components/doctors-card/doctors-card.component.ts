@@ -9,9 +9,13 @@ import { Router } from "@angular/router";
 export class DoctorsCardComponent implements OnInit {
   @Input() items: any[];
 
+  baseUrl = "http://195.206.106.154:3000";
+
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.items);
+  }
 
   changeToDoctor(item) {
     this.router.navigate([`/amertat/information/doctors/doctor/${item.id}`], {
