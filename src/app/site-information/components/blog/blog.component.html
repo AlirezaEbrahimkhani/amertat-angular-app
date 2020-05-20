@@ -14,14 +14,14 @@
     <div class="row">
       <div
         class="col-lg-4 col-md-6"
-        *ngFor="let item of blogPostNumber; let i = index"
-        (click)="onClickCard()"
+        *ngFor="let item of blogCard"
+        (click)="onClickCard(item)"
       >
         <div class="card card-cascade narrower my-3">
           <div class="view view-cascade overlay">
             <img
               class="card-img-top"
-              src="../../../../assets/Blog/blog{{ i + 1 }}.jpg"
+              src="{{ baseUrl }}{{ item.image.url }}"
               alt="Card image cap"
             />
             <a>
@@ -33,15 +33,13 @@
             <h5 class="pink-text pb-2 pt-1">
               <i class="fas fa-clipboard"></i> Blog
             </h5>
-            <h4 class="font-weight-bold card-title">Blog Post {{ item }}</h4>
+            <h4 class="font-weight-bold card-title">{{ item.title }}</h4>
             <p class="card-text">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+              {{ item.desc }}
             </p>
-            <button mat-raised-button color="primary">Read More</button>
           </div>
           <div class="card-footer text-muted text-center">
-            Author : Alireza Ebrahimkhani
+            <button mat-raised-button color="primary">Read More</button>
           </div>
         </div>
       </div>
