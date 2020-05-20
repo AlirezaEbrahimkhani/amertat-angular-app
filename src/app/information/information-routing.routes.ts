@@ -17,41 +17,41 @@ const routes: Routes = [
         path: "hospitals",
         component: HospitalsComponent,
         data: {
-          breadcrumb: "بیمارستان ها"
-        }
+          breadcrumb: "بیمارستان ها",
+        },
       },
       {
         path: "doctors",
         component: DoctorsComponent,
         data: {
-          breadcrumb: "پزشکان ها"
-        }
+          breadcrumb: "پزشکان ها",
+        },
       },
       {
         path: "cities",
         component: CitiesComponent,
         data: {
-          breadcrumb: "شهر ها"
-        }
+          breadcrumb: "شهر ها",
+        },
       },
       {
-        path: "hospitals/hospital",
-        component: HospitalComponent
+        path: "hospitals/hospital/:id",
+        component: HospitalComponent,
       },
       {
         path: "doctors/doctor/:id",
-        component: DoctorComponent
+        component: DoctorComponent,
       },
       {
-        path: "cities/city",
-        component: CityComponent
-      }
-    ]
-  }
+        path: "cities/city/:id",
+        component: CityComponent,
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class InformationRoutingModule {}
