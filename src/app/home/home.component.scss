@@ -28,6 +28,12 @@ html {
   margin-left: 41%;
 }
 
+.card-body {
+  min-height: 270px;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
 @media only screen and (max-width: 479px) {
   .margin-top {
     margin-top: 50px;
