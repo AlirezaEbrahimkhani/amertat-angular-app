@@ -3,7 +3,7 @@
     <div class="col-lg-5 my-5">
       <img
         class="img-fluid mat-elevation-z4"
-        src="{{ baseUrl }}{{ doctor.image.url }}"
+        src="{{ imageUrl }}"
       />
     </div>
     <div class="col-lg-6 my-5 col-md-11 p-40">
@@ -76,7 +76,7 @@
                 *ngFor="let item of doctor.workDays"
               >
                 <li id="li-style" class="dark">
-                  <span> {{ item.days.splite(",").join(",") }} </span>
+                  <span> {{ item.days }} </span>
                   <div class="pull-right">{{ item.from }} - {{ item.to }}</div>
                 </li>
               </ul>

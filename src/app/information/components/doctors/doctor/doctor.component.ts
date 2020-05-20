@@ -12,7 +12,7 @@ import { InformationService } from "src/app/information/shared/information.servi
 export class DoctorComponent implements OnInit {
   doctor: any = [];
   baseUrl = "http://195.206.106.154:3000";
-
+  imageUrl: string = "";
   form = new FormGroup({});
 
   constructor(
@@ -24,6 +24,7 @@ export class DoctorComponent implements OnInit {
     let { id } = this.activeRoute.snapshot.params;
     this.infoSrv.getDoctor(id).subscribe((response) => {
       this.doctor = response;
+      this.imageUrl = this.baseUrl + this.doctor.image.url;
     });
   }
 
