@@ -1,38 +1,56 @@
-<form class="form">
+<form [formGroup]="form" class="form" (ngSubmit)="onSubmit()">
   <mat-form-field class="half-width">
     <mat-label>First name :</mat-label>
-    <input matInput />
+    <input matInput formControlName="name" />
   </mat-form-field>
   <mat-form-field class="half-width">
     <mat-label>Last Name :</mat-label>
-    <input matInput />
+    <input matInput formControlName="family" />
   </mat-form-field>
   <mat-form-field class="half-width">
     <mat-label>Phone Number :</mat-label>
-    <input matInput placeholder="Ex. +989102525256" />
+    <input matInput placeholder="Ex. +989102525256" formControlName="phoneNumber" />
   </mat-form-field>
   <mat-form-field class="half-width">
     <mat-label>FeedBack : </mat-label>
-    <mat-select disableRipple>
-      <mat-option *ngFor="let item of feedBacks; let i = index" value="i">{{
-        item
-      }}</mat-option>
+    <mat-select disableRipple formControlName="feedBack">
+      <mat-option
+        *ngFor="let item of feedBacks; let i = index"
+        value="{{ i }}"
+        >{{ item }}</mat-option
+      >
     </mat-select>
   </mat-form-field>
   <mat-form-field class="full-width">
     <mat-label>Subject :</mat-label>
-    <input matInput placeholder="Ex. Ethics of doctors" />
+    <input
+      matInput
+      placeholder="Ex. Ethics of doctors"
+      formControlName="subject"
+    />
   </mat-form-field>
   <mat-form-field class="full-width">
     <mat-label>Email :</mat-label>
-    <input matInput placeholder="Ex. example@amertat.com" />
+    <input
+      matInput
+      placeholder="Ex. example@amertat.com"
+      formControlName="email"
+    />
   </mat-form-field>
   <mat-form-field class="full-width">
     <mat-label>Address : </mat-label>
-    <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+    <textarea
+      matInput
+      placeholder="Ex. 100 Main St"
+      formControlName="address"
+    ></textarea>
   </mat-form-field>
   <div class="d-flex">
-    <button class="btn btn-danger" type="button" (click)="onCancel()">cancel</button>
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <button mat-raised-button color="warn" type="button" (click)="onCancel()">
+      cancel
+    </button>
+    <button mat-raised-button color="primary" type="submit">
+      Submit
+    </button>
   </div>
 </form>
