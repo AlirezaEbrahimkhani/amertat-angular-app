@@ -9,18 +9,6 @@ import { SiteInformationService } from "../../shared/services/site-information.s
 export class BlogComponent implements OnInit {
   blogCard: any = [];
   baseUrl = "http://195.206.106.154:3000";
-  blogPostNumber: string[] = [
-    "One",
-    "Two",
-    "Three",
-    "Four",
-    "Five",
-    "Six",
-    "Seven",
-    "Eight",
-    "Nine",
-  ];
-
   constructor(private siteInfoSrv: SiteInformationService) {}
 
   ngOnInit() {
