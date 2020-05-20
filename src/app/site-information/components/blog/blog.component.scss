@@ -5,3 +5,9 @@
 .card {
   cursor: pointer;
 }
+
+.card-body {
+  min-height: 270px;
+  max-height: 270px;
+  overflow-y: scroll;
+}
