@@ -13,7 +13,11 @@ export class TourismServiceComponent implements OnInit {
 
   ngOnInit() {
     this.tourismSrv.getTourismServicePage().subscribe((response: any[]) => {
-      this.pageConfig = response[0];
+      response.forEach((element) => {
+        if (element.isActive) {
+          this.pageConfig = element;
+        }
+      });
     });
   }
 }
