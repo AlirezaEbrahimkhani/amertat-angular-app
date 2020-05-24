@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { MatDialogRef } from "@angular/material";
+import { MatDialogRef, MatSnackBar } from "@angular/material";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { HeaderFooterService } from "src/app/header-footer/shared/services/header-footer.service";
 
 @Component({
   selector: "app-contact-us-modal",
@@ -29,11 +30,23 @@ export class ContactUsModalComponent implements OnInit {
     ]),
   });
 
-  constructor(public dialogRef: MatDialogRef<ContactUsModalComponent>) {}
+  constructor(
+    public dialogRef: MatDialogRef<ContactUsModalComponent>,
+    private headerFooterSrv: HeaderFooterService,
+    private snackBar: MatSnackBar
+  ) {}
 
   ngOnInit() {}
 
-  onSubmit() {}
+  onSubmit() {
+    this.headerFooterSrv
+      .contactUsForm(this.form.value)
+      .subscribe((response: any) => {
+        this.snackBar.open("Successfully Submited!", "SUCCESS", {
+          duration: 2000,
+        });
+      });
+  }
 
   onCancel() {
     this.dialogRef.close();
