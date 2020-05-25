@@ -24,4 +24,12 @@ export class InformationService {
   getHospitalsPage() {
     return this.http.get(this.baseUrl + "hospital-page");
   }
+
+  getHospitals() {
+    return this.http.get(this.baseUrl + "hospital");
+  }
+
+  getHospital(id) {
+    return this.http.get(this.baseUrl + "hospital/" + id);
+  }
 }
