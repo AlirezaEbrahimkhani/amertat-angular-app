@@ -13,8 +13,7 @@ export class DoctorsCardComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   changeToDoctor(item) {
     this.router.navigate([`/amertat/information/doctors/doctor/${item.id}`], {

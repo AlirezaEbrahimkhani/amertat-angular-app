@@ -2,7 +2,7 @@
   imgSrc="./../../../../../assets/information/hospital/hospital-header.jpeg"
   title="More about hospital"
 ></app-simple-cover>
-<h2 class="text-center my-5">Learn More About Bahman Hospital</h2>
+<h2 class="text-center my-5">Learn More About {{ hospital.name }} Hospital</h2>
 <div class="svg my-5">
   <img
     class="img-fluid"
@@ -10,7 +10,9 @@
     alt="hospital-info"
   />
 </div>
-<h2 class="text-center margin-top">More Detail About Bahman Hospital</h2>
+<h2 class="text-center margin-top">
+  More Detail About {{ hospital.name }} Hospital
+</h2>
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-6 my-3" *ngFor="let item of hospitalCards">
@@ -42,7 +44,6 @@
           <h4 class="font-weight-bold float-right mr-2">{{ item.Number }}</h4>
         </div>
         <div class="card-body white">
-          <p class="text-muted">{{ item.progressBarDesc }}</p>
           <h4 class="text-uppercase font-weight-bold my-4">
             {{ item.detailTitle }}
           </h4>
@@ -55,38 +56,19 @@
 <div class="container">
   <app-carousel
     title="Hospital Gallary"
-    [items]="hospitalGallari"
+    [items]="hospital.carousels"
   ></app-carousel>
   <div class="margin-top">
-    <h1 class="text-center mb-3">Why Bahman Hospital ?</h1>
+    <h1 class="text-center mb-3">Why {{ hospital.name }} Hospital ?</h1>
     <p class="text-center">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore labore
-      provident pariatur similique et dolorum hic architecto animi voluptate
-      quae, at modi! Repellendus quibusdam error dolorum facere tempore
-      accusantium perferendis! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Praesentium, maiores porro earum veritatis voluptate
-      itaque officia repellendus ipsum laboriosam delectus quam fugit iste
-      debitis et expedita aliquam, tenetur sint? Suscipit? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Voluptates atque, voluptas nihil earum
-      natus cum quam dolorum enim ex libero est suscipit alias, debitis id
-      doloribus quisquam officia possimus asperiores? Lorem ipsum dolor sit,
-      amet consectetur adipisicing elit. Culpa aliquam maiores obcaecati,
-      corporis laborum provident perferendis velit nesciunt consectetur dicta
-      facere iure pariatur fuga voluptates placeat quo. Distinctio, temporibus
-      illo.amet consectetur adipisicing elit. Voluptates atque, voluptas nihil
-      earum natus cum quam dolorum enim ex libero est suscipit alias, debitis id
-      doloribus quisquam officia possimus asperiores? Lorem ipsum dolor sit,
-      amet consectetur adipisicing elit. Culpa aliquam maiores obcaecati,
-      corporis laborum provident perferendis velit nesciunt consectetur dicta
-      facere iure pariatur fuga voluptates placeat quo. Distinctio, temporibus
-      illo.
+      {{ hospital.desc }}
     </p>
   </div>
   <h1 class="text-center my-5">Our Service</h1>
   <ul class="margin-top list-group list-group-flush">
     <li class="list-group-item" *ngFor="let item of services">
-      <h1 class="font-size-1">{{ item.header }}</h1>
-      <p class="text-center mt-2">{{ item.description }}</p>
+      <h1 class="font-size-1">{{ item.title }}</h1>
+      <p class="text-center mt-2">{{ item.desc }}</p>
     </li>
   </ul>
 </div>

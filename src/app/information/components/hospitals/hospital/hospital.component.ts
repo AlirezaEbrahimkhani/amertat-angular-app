@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { InformationService } from "src/app/information/shared/information.service";
 
 @Component({
   selector: "app-hospital",
@@ -6,110 +8,60 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./hospital.component.scss"],
 })
 export class HospitalComponent implements OnInit {
-  hospitalCards: any[] = [
-    {
-      title: "Hospital Capacity",
-      description: "Lorem ipsum dolor sit, amet consectetur.",
-      icon: "bed",
-      titleDetail: "Bed Number",
-      Number: "4000",
-      detailTitle: "About Beds",
-      detailDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      title: "Hospital Palce",
-      description: "Lorem ipsum dolor sit, amet consectetur.",
-      icon: "map-marker-alt",
-      titleDetail: "City Name",
-      Number: "Tehran",
-      detailTitle: "About Tehran",
-      detailDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      title: "About Doctors",
-      description: "Lorem ipsum dolor sit, amet consectetur.",
-      icon: "stethoscope",
-      titleDetail: "Number of doctors",
-      Number: "200",
-      detailTitle: "About Our Doctor",
-      detailDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      title: "Hospital Equipment",
-      description: "Lorem ipsum dolor sit, amet consectetur.",
-      icon: "syringe",
-      titleDetail: "Equipment",
-      Number: "2510",
-      detailTitle: "About Our Equipment",
-      detailDesc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-  ];
+  hospitalCards: any[] = [];
+  services: any[] = [];
+  hospital: any = [];
+  constructor(
+    private activeRoute: ActivatedRoute,
+    private infoSrv: InformationService
+  ) {}
 
-  hospitalGallari: any[] = [
-    {
-      name: "Image One",
-      description: "First text",
-      imgSrc: "./../../../../../assets/information/hospital/sample1.jpg",
-    },
-    {
-      name: "Image Two",
-      description: "Secondary text",
-      imgSrc: "./../../../../../assets/information/hospital/sample2.jpg",
-    },
-    {
-      name: "Image Three",
-      description: "Third text",
-      imgSrc: "./../../../../../assets/information/hospital/sample3.jpg",
-    },
-  ];
-
-  services: any[] = [
-    {
-      header: "Emergency",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Infertility & Baby Delivery",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Cardiology",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Physiotherapy",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Orthopedics",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "General surgery",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Infectious Diseases Treatment",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-    {
-      header: "Psychiatry",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel dolores qui, necessitatibus aut eaque magni mollitia tenetur molestiae sit quae quos quaerat amet exercitationem atque animi odio.",
-    },
-  ];
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    let { id } = this.activeRoute.snapshot.params;
+    this.infoSrv.getHospital(id).subscribe((response: any) => {
+      let { sevices } = response;
+      this.hospital = response;
+      this.services = sevices;
+      this.hospitalCards = [
+        {
+          title: "Hospital Capacity",
+          description: "One way to develop the hospital capacity",
+          icon: "bed",
+          titleDetail: "Bed Number",
+          Number: response.bedCount,
+          detailTitle: "About Beds",
+          detailDesc: response.aboutBeds,
+        },
+        {
+          title: "Hospital Palce",
+          description: "Hsopital should be in the calm place in city",
+          icon: "map-marker-alt",
+          titleDetail: response.cityName,
+          Number: response.cityName,
+          detailTitle: "About " + response.cityName,
+          detailDesc: response.aboutCity,
+        },
+        {
+          title: "About Doctors",
+          description:
+            "Hospital doctors examine, diagnose and treat patients who've been referred to the hospital by GPs and other health professionals",
+          icon: "stethoscope",
+          titleDetail: "Number Of Doctors",
+          Number: response.doctorCount,
+          detailTitle: "About Our Doctor",
+          detailDesc: response.aboutDoctors,
+        },
+        {
+          title: "Hospital Equipment",
+          description:
+            "Help assure excellent patient care by outfitting your facility with the right clinic and hospital supplies & equipment.",
+          icon: "syringe",
+          titleDetail: "Equipment",
+          Number: response.equipmentCount,
+          detailTitle: "About Our Equipment",
+          detailDesc: response.aboutEquipment,
+        },
+      ];
+    });
+  }
 }
