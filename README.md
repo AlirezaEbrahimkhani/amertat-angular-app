@@ -5,8 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Final result
 
 <center>
-<img src"./src/assets/result.png" width="100%">
+  <img src="./src/assets/result.png" width="100%">
 </center>
+
 
 ## Development server
 
