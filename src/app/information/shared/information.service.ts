@@ -20,4 +20,8 @@ export class InformationService {
   getDoctor(id) {
     return this.http.get(this.baseUrl + "doctor/" + id);
   }
+
+  getHospitalsPage() {
+    return this.http.get(this.baseUrl + "hospital-page");
+  }
 }
