@@ -5,3 +5,9 @@
 .margin-top {
   margin: 100px 0;
 }
+
+.card-body {
+  min-height: 160px;
+  max-height: 200px;
+  overflow-y: auto;
+}
