@@ -3,7 +3,7 @@
     <div
       class="col-lg-4 col-md-6 my-3"
       *ngFor="let item of items"
-      (click)="onChangeRoute()"
+      (click)="onChangeRoute(item)"
     >
       <section class="hospitals-cards">
         <div class="card-wrapper">
@@ -15,12 +15,15 @@
                     {{ item.name }}
                   </p>
                   <p class="white-text font-size-2 mt-10 full-width">
-                    {{ item.description }}
+                    {{ item.desc }}
                   </p>
                   <button mat-raised-button color="accent">Read more</button>
                 </div>
               </div>
-              <img [src]="item.imgSrc" class="hospitals-card-img" />
+              <img
+                src="{{ baseUrl }}{{ item.image.url }}"
+                class="hospitals-card-img"
+              />
             </div>
           </div>
         </div>
