@@ -3,17 +3,17 @@ import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-about-us",
   templateUrl: "./about-us.component.html",
-  styleUrls: ["./about-us.component.scss"]
+  styleUrls: ["./about-us.component.scss"],
 })
 export class AboutUsComponent implements OnInit {
   lines: string[] = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae."
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.Cupiditate, iure incidunt aspernatur officiis perferendis repudiandae.",
   ];
 
-  persons : string[] = [
+  persons: string[] = [
     "person1.jpg",
     "person2.jpg",
     "person3.jpg",
@@ -22,29 +22,29 @@ export class AboutUsComponent implements OnInit {
     "person2.jpg",
     "person3.jpg",
     "person4.jpg",
-  ]
+  ];
 
   developmentTeam: any[] = [
     {
       imgSrc: "../../../../assets/contact-us/person4.jpg",
-      name: "parham ghasemloo",
-      label: "Project Manager"
+      name: "Alireza Ebrahimkhani",
+      label: "Project Manager",
     },
     {
       imgSrc: "../../../../assets/contact-us/person2.jpg",
-      name: "Alireza Ebrahimkhani",
-      label: "Web Developer"
+      name: "Josef seed",
+      label: "Web Developer",
     },
     {
       imgSrc: "../../../../assets/contact-us/person3.jpg",
-      name: "Alireza Yousefi Amiri",
-      label: "Web Developer"
+      name: "John Doe",
+      label: "Web Developer",
     },
     {
       imgSrc: "../../../../assets/contact-us/person1.jpg",
       name: "Steve Smith",
-      label: "Web Developer"
-    }
+      label: "Web Developer",
+    },
   ];
 
   constructor() {}
