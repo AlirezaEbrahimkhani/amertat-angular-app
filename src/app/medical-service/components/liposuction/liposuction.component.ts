@@ -12,8 +12,9 @@ export class LiposuctionComponent implements OnInit {
   constructor(private medicalSrv: MedicalServiceService) {}
 
   ngOnInit() {
-    this.medicalSrv.getLiposuctionPage().subscribe((response: any[]) => {
-      this.pageConfig = response[0];
+    this.medicalSrv.getLiposuctionPage().subscribe((response: any) => {
+      const { data } = response;
+      this.pageConfig = data[0];
     });
   }
 }

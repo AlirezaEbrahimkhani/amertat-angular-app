@@ -1,20 +1,19 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class MedicalServiceService {
+  baseUrl = "http://localhost:5000/api/";
 
-  baseUrl = "http://195.206.106.154:3000/"
+  constructor(private http: HttpClient) {}
 
-  constructor(private http : HttpClient) { }
-
-  getLiposuctionPage(){
-    return this.http.get(this.baseUrl + "lisposuction-page");
+  getLiposuctionPage() {
+    return this.http.get(this.baseUrl + "liposuction/active");
   }
 
-  getHairTranspalentPage(){
-    return this.http.get(this.baseUrl + "hair-transaction-page");
+  getHairTranspalentPage() {
+    return this.http.get(this.baseUrl + "hair-transplant/active");
   }
 }

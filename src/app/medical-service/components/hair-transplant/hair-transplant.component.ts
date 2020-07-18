@@ -12,8 +12,9 @@ export class HairTransplantComponent implements OnInit {
   constructor(private medicalSrv: MedicalServiceService) {}
 
   ngOnInit() {
-    this.medicalSrv.getHairTranspalentPage().subscribe((response: any[]) => {
-      this.pageConfig = response[0];
+    this.medicalSrv.getHairTranspalentPage().subscribe((response: any) => {
+      const { data } = response;
+      this.pageConfig = data[0];
     });
   }
 }
