@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { TourismService } from '../../shared/service/tourism.service';
+import { Component, OnInit } from "@angular/core";
+import { TourismService } from "../../shared/service/tourism.service";
 
 @Component({
-  selector: 'app-accommodation-service',
-  templateUrl: './accommodation-service.component.html',
-  styleUrls: ['./accommodation-service.component.scss']
+  selector: "app-accommodation-service",
+  templateUrl: "./accommodation-service.component.html",
+  styleUrls: ["./accommodation-service.component.scss"],
 })
 export class AccommodationServiceComponent implements OnInit {
   pageConfig: any = [];
@@ -12,9 +12,9 @@ export class AccommodationServiceComponent implements OnInit {
   constructor(private tourismSrv: TourismService) {}
 
   ngOnInit() {
-    this.tourismSrv.getAccomodationPage().subscribe((response: any[]) => {
-      this.pageConfig = response[0];
+    this.tourismSrv.getAccomodationPage().subscribe((response: any) => {
+      const { data } = response;
+      this.pageConfig = data[0];
     });
   }
-
 }

@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root",
 })
 export class TourismService {
-  baseUrl = "http://195.206.106.154:3000/";
+  baseUrl = "http://localhost:5000/api/";
 
   constructor(private http: HttpClient) {}
 
@@ -14,6 +14,6 @@ export class TourismService {
   }
 
   getAccomodationPage() {
-    return this.http.get(this.baseUrl + "accomodation-page");
+    return this.http.get(this.baseUrl + "accomodation/active");
   }
 }
