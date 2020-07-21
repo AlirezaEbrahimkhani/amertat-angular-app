@@ -7,17 +7,14 @@ import { TourismService } from "../../shared/service/tourism.service";
   styleUrls: ["./tourism-service.component.scss"],
 })
 export class TourismServiceComponent implements OnInit {
-  pageConfig: any = [];
+  explanation: string = "";
 
   constructor(private tourismSrv: TourismService) {}
 
   ngOnInit() {
-    this.tourismSrv.getTourismServicePage().subscribe((response: any[]) => {
-      response.forEach((element) => {
-        if (element.isActive) {
-          this.pageConfig = element;
-        }
-      });
+    this.tourismSrv.getTourismServicePage().subscribe((response: any) => {
+      const { data } = response;
+      this.explanation = data[0].explanation;
     });
   }
 }

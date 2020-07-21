@@ -10,7 +10,7 @@ export class TourismService {
   constructor(private http: HttpClient) {}
 
   getTourismServicePage() {
-    return this.http.get(this.baseUrl + "about-tourism-page");
+    return this.http.get(this.baseUrl + "tourism-service/active");
   }
 
   getAccomodationPage() {
