@@ -33,12 +33,9 @@ export class HomeComponent implements OnInit {
       });
     });
 
-    this.homeSrv.getHomePage().subscribe((response: any[]) => {
-      response.forEach((element) => {
-        if (element.isActive) {
-          this.pageConfig = element;
-        }
-      });
+    this.homeSrv.getHomePage().subscribe((response: any) => {
+      const { data } = response;
+      this.pageConfig = data[0];
     });
   }
 

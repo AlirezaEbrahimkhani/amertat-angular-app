@@ -5,11 +5,11 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root",
 })
 export class HomeService {
-  baseUrl = "http://195.206.106.154:3000/";
+  baseUrl = "http://localhost:5000/api/";
 
   constructor(private http: HttpClient) {}
 
   getHomePage() {
-    return this.http.get(this.baseUrl + "home-page");
+    return this.http.get(this.baseUrl + "home/active");
   }
 }
