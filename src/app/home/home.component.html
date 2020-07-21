@@ -55,7 +55,7 @@
     <div class="row mt-5">
       <div
         class="col-lg-4 col-md-6"
-        *ngFor="let item of blogCard"
+        *ngFor="let item of popularProcedure"
         (click)="onClickCard(item)"
       >
         <div class="card card-cascade narrower my-3">
@@ -72,7 +72,7 @@
 
           <div class="card-body card-body-cascade">
             <p class="card-text">
-              {{ item.desc }}
+              {{ item.description }}
             </p>
             <button mat-raised-button color="primary">Read More</button>
           </div>

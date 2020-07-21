@@ -11,25 +11,19 @@ import { HomeService } from "./home.service";
 export class HomeComponent implements OnInit {
   imgSrc: string = "./../../assets/home/header3.jpg";
   title: string = "Amertat Medical Tourism is the best place for treatment";
-  baseUrl: string = "http://195.206.106.154:3000";
+  baseUrl: string = "http://localhost:5000";
   counter: number = 0;
   pageConfig: any = [];
 
-  blogCard: any[] = [];
+  popularProcedure: any[] = [];
 
-  constructor(
-    private router: Router,
-    private siteInfoSrv: SiteInformationService,
-    private homeSrv: HomeService
-  ) {}
+  constructor(private router: Router, private homeSrv: HomeService) {}
 
   ngOnInit() {
-    this.siteInfoSrv.getBlog().subscribe((response: any[]) => {
-      response.forEach((element) => {
-        if (this.counter != 9) {
-          this.blogCard.push(element);
-          this.counter++;
-        }
+    this.homeSrv.getPopularProcedure().subscribe((response: any) => {
+      const { data } = response;
+      data.slice(0, 9).map((item, i) => {
+        this.popularProcedure.push(item);
       });
     });
 

@@ -12,4 +12,8 @@ export class HomeService {
   getHomePage() {
     return this.http.get(this.baseUrl + "home/active");
   }
+
+  getPopularProcedure() {
+    return this.http.get(this.baseUrl + "popular-procedure")
+  }
 }
