@@ -9,18 +9,18 @@
     <div class="col-lg-3 col-md-6 mb-5" *ngFor="let item of cardInfo">
       <div class="card">
         <img
-          src="http://195.206.106.154:3000{{ item.image.url }}"
+          src="http://localhost:5000{{ item.image.url }}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body text-center">
-          <h5 class="card-title">Card {{ item.title }}</h5>
+          <h5 class="card-title">{{ item.title }}</h5>
           <p class="card-text text-justify">
-            {{ item.desc }}
+            {{ item.description }}
           </p>
         </div>
         <div class="card-footer text-center">
-          <small class="text-muted">{{ item.footer }}</small>
+          <small class="text-muted">Written by {{ item.writer }}</small>
         </div>
       </div>
     </div>

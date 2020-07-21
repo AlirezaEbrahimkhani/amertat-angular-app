@@ -12,10 +12,8 @@ export class PopularDestinationComponent implements OnInit {
   constructor(private sharedService: SharedService) {}
 
   ngOnInit() {
-    this.sharedService.getPopularDestination().subscribe((response: any[]) => {
-      response.forEach((element) => {
-        this.cardInfo.push(element);
-      });
+    this.sharedService.getPopularDestination().subscribe((response: any) => {
+      this.cardInfo = response.data;
     });
   }
 }

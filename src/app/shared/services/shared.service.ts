@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class SharedService {
+  baseUrl = "http://localhost:5000/api/";
 
-  baseUrl = "http://195.206.106.154:3000/"
+  constructor(private http: HttpClient) {}
 
-  constructor(private http : HttpClient) { }
-
-  getPopularDestination(){
-    return this.http.get(this.baseUrl + "destination");
+  getPopularDestination() {
+    return this.http.get(this.baseUrl + "popular-destination");
   }
 }
