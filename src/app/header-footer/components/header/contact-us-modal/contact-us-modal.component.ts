@@ -9,7 +9,7 @@ import { HeaderFooterService } from "src/app/header-footer/shared/services/heade
   styleUrls: ["./contact-us-modal.component.scss"],
 })
 export class ContactUsModalComponent implements OnInit {
-  feedBacks: string[] = [
+  feedBacks: any[] = [
     "Very Good = 5",
     "Good = 4",
     "Not Good Not Bad Just Fine = 3",
@@ -36,16 +36,28 @@ export class ContactUsModalComponent implements OnInit {
     private snackBar: MatSnackBar
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.headerFooterSrv.getFeedbacks().subscribe((response: any) => {
+      const { data } = response;
+      this.feedBacks = data;
+    });
+  }
 
   onSubmit() {
     this.headerFooterSrv
       .contactUsForm(this.form.value)
       .subscribe((response: any) => {
-        this.snackBar.open("Successfully Submited!", "SUCCESS", {
-          duration: 2000,
-        });
+        if (response.success) {
+          this.snackBar.open(
+            "Successfully Submited! \n Please check you Email ...!",
+            "SUCCESS",
+            {
+              duration: 2000,
+            }
+          );
+        }
       });
+    this.dialogRef.close();
   }
 
   onCancel() {

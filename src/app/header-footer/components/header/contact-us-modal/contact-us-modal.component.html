@@ -9,15 +9,19 @@
   </mat-form-field>
   <mat-form-field class="half-width">
     <mat-label>Phone Number :</mat-label>
-    <input matInput placeholder="Ex. +989102525256" formControlName="phoneNumber" />
+    <input
+      matInput
+      placeholder="Ex. +989102525256"
+      formControlName="phoneNumber"
+    />
   </mat-form-field>
   <mat-form-field class="half-width">
     <mat-label>FeedBack : </mat-label>
     <mat-select disableRipple formControlName="feedBack">
       <mat-option
-        *ngFor="let item of feedBacks; let i = index"
-        value="{{ i }}"
-        >{{ item }}</mat-option
+        *ngFor="let item of feedBacks"
+        value="{{ item.feedback_value }}"
+        >{{ item.feedback_name }}</mat-option
       >
     </mat-select>
   </mat-form-field>

@@ -5,12 +5,16 @@ import { HttpClient } from "@angular/common/http";
   providedIn: "root",
 })
 export class HeaderFooterService {
-  baseUrl = "http://195.206.106.154:3000/";
+  baseUrl = "http://localhost:5000/api/";
 
   constructor(private http: HttpClient) {}
 
   contactUsForm(model) {
     model["feedBack"] = <number>model["feedBack"];
     return this.http.post(this.baseUrl + "contact-us", model);
+  }
+
+  getFeedbacks() {
+    return this.http.get(this.baseUrl + "feedbacks");
   }
 }
