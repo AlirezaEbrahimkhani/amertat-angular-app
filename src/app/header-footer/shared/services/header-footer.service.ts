@@ -14,7 +14,16 @@ export class HeaderFooterService {
     return this.http.post(this.baseUrl + "contact-us", model);
   }
 
+  getFreeQouteForm(model) {
+    model["method"] = <number>model["method"];
+    return this.http.post(this.baseUrl + "qoute", model);
+  }
+
   getFeedbacks() {
     return this.http.get(this.baseUrl + "feedbacks");
+  }
+
+  getMethods() {
+    return this.http.get(this.baseUrl + "methods");
   }
 }
