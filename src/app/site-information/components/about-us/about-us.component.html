@@ -5,22 +5,23 @@
 <div class="normal-text">
   <h3 class="font-size-1">About Our Team</h3>
   <p class="font-size-2">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione est nemo
-    voluptatem voluptatum sequi delectus facere ut culpa perspiciatis, amet ipsa
-    quibusdam porro dolorem, magnam magni alias pariatur iste aut! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Dignissimos quos consequatur
-    numquam eius molestias deserunt iste temporibus velit sapiente totam nam
-    corrupti laborum et dicta atque ipsum, recusandae eligendi pariatur. Lorem
-    ipsum dolor sit amet consectetur adipisicing elit. Et, accusamus! Cum
-    reiciendis molestias dolor. Amet sed, voluptates autem fuga porro sit hic
-    iusto! Dolores laborum ratione natus, quae magni nobis. Lorem ipsum dolor,
-    sit amet consectetur adipisicing elit. Veniam, nostrum sapiente quos
-    recusandae, illum nulla dicta beatae accusantium veritatis impedit delectus.
-    Magnam assumenda velit veritatis aliquid accusamus. Ratione, commodi autem.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsum
-    necessitatibus perspiciatis, quae illum odio perferendis quas quis
-    voluptates, veritatis deleniti? Optio ex impedit corporis nostrum aliquam,
-    nobis assumenda minus?
+    Amertat Medical Tourism is the biggest medical tourism and healthcare
+    service provider in Iran. A team of skilled, experienced professionals, it
+    focuses on medical tourism, tours and travel services for international
+    patients from across the world. Amertat Medical Tourism is associated with
+    the most famous and prestigious hospitals, clinics, specialists and doctors.
+    Selected hospitals and clinics are well equipped with the finest
+    infrastructure, modern equipment, trained supportive staffs and
+    international standards of hygiene and care for the comfort of patients. Our
+    services are planned and scheduled in advance. We adhere strongly to the
+    medical ethics and standards and use our international knowledge in the
+    field of medical tourism in Iran to deliver cost-effective, timely, safe and
+    quality services. In fact, we cater to all the nuances of medical tourism
+    and guide you through every step. We try to understand your expectations and
+    give the best services for your medical travel to Iran. We examine your
+    medical condition comprehensively and suggest a customized mix of hospitals,
+    clinics, and top surgeons. All Amertat Medical Tourism medical treatments’
+    costs are 40 to 200 percent cheaper than those in other countries.
   </p>
 </div>
 
@@ -33,8 +34,12 @@
             Meet Our Team
           </h1>
           <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            laborum numquam aperiam dolores a porro!
+            When you look closely, you’ll see that each team member is posed in
+            a way that represents their personality. They took the average team
+            member headshot to a whole new level by making the individual team
+            members interact and move in the direction the mouse moves. When you
+            highlight a particular person, everyone else looks toward them –
+            slightly creepy, but very cool.
           </p>
         </div>
       </div>
@@ -45,32 +50,15 @@
         <div class="card">
           <div class="card-body">
             <img
-              src="./../../../../assets/About Us/{{ item.img }}"
+              src="http://localhost:5000{{ item.image.url }}"
               alt=""
               class="img-fluid rounded-circle w-50 mb-3"
             />
             <h3>{{ item.name }}</h3>
             <h5 class="text-muted">{{ item.position }}</h5>
             <p>
-              {{ item.desc }}
+              {{ item.description }}
             </p>
-            <div class="d-flex justify-content-center">
-              <div class="p-4">
-                <a href="http://facebook.com">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </div>
-              <div class="p-4">
-                <a href="http://twitter.com">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </div>
-              <div class="p-4">
-                <a href="http://instagram.com">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -83,9 +71,8 @@
       <div class="col text-center py-5">
         <h1 class="display-5 color">Share</h1>
         <p class="lead color">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          harum esse possimus libero tenetur dolor praesentium corrupti
-          architecto qui sunt.
+          You can support us with share us with your friend and suggest us to
+          hospitals and medical clinics
         </p>
         <button class="btn btn-outline-light">Find Out More</button>
       </div>
@@ -105,9 +92,10 @@
       <div class="col-md-6">
         <h3>Share Us With Your Friends</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos esse,
-          dolore aspernatur maiores distinctio tempore perferendis sed sunt
-          corporis assumenda?
+          Amertat Medical Tourism is the biggest medical tourism and healthcare
+          service provider in Iran. A team of skilled, experienced
+          professionals, it focuses on medical tourism, tours and travel
+          services for international patients from across the world
         </p>
         <div class="d-flex">
           <div class="p-4 align-self start">
@@ -115,8 +103,8 @@
           </div>
           <div class="p-4 align-self-end">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, et
-              modi suscipit iste sint odio.
+              Amertat Medical Tourism is associated with the most famous and
+              prestigious hospitals, clinics, specialists and doctors.
             </p>
           </div>
         </div>
@@ -126,8 +114,8 @@
           </div>
           <div class="p-4 align-self-end">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, et
-              modi suscipit iste sint odio.
+              All Amertat Medical Tourism medical treatments’ costs are 40 to
+              200 percent cheaper than those in other countries.
             </p>
           </div>
         </div>
@@ -142,12 +130,12 @@
     <div class="row">
       <div class="col-md-3" *ngFor="let item of developmentTeam">
         <img
-          src="{{ item.imgSrc }}"
+          src="http://localhost:5000{{ item.image.url }}"
           alt=""
           class="img-person rounded-circle mb-2"
         />
         <h4>{{ item.name }}</h4>
-        <small>{{ item.label }}</small>
+        <small>{{ item.position }}</small>
       </div>
     </div>
   </div>
