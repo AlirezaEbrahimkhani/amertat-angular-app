@@ -8,14 +8,13 @@ import { SiteInformationService } from "../../shared/services/site-information.s
 })
 export class BlogComponent implements OnInit {
   blogCard: any = [];
-  baseUrl = "http://195.206.106.154:3000";
+  baseUrl = "http://localhost:5000";
   constructor(private siteInfoSrv: SiteInformationService) {}
 
   ngOnInit() {
-    this.siteInfoSrv.getBlog().subscribe((response: any[]) => {
-      response.forEach((element) => {
-        this.blogCard.push(element);
-      });
+    this.siteInfoSrv.getBlog().subscribe((response: any) => {
+      const { data } = response;
+      this.blogCard = data;
     });
   }
 

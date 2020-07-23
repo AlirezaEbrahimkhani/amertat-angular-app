@@ -10,7 +10,7 @@ export class SiteInformationService {
   constructor(private http: HttpClient) {}
 
   getBlog() {
-    return this.http.get("http://195.206.106.154:3000/" + "blog");
+    return this.http.get(this.baseUrl + "blog");
   }
 
   getTeams() {
